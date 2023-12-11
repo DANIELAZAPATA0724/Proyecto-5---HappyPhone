@@ -7,8 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    width: fit-content;
+img{
+    width: 10rem;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
 }
 
 /*HEADER*/
