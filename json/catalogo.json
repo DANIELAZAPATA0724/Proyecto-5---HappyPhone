@@ -1,0 +1,40 @@
+{
+    "moviles": [
+      {
+        "nombre": "Happy 1",
+        "ruta_imagen": "../img/happy1.png",
+        "precio": 599,
+        "descripcion": "Increíble smartphone",
+        "color": "negro"
+      },
+      {
+        "nombre": "Happy 2",
+        "ruta_imagen": "../img/happy2.png",
+        "precio": 699,
+        "descripcion": "Potente y elegante",
+        "color": "plateado"
+      },
+      {
+        "nombre": "Happy 3",
+        "ruta_imagen": "../img/happy3.png",
+        "precio": 499,
+        "descripcion": "Compacto y moderno",
+        "color": "azul"
+      },
+      {
+        "nombre": "Happy 4",
+        "ruta_imagen": "../img/happy4.png",
+        "precio": 399,
+        "descripcion": "Asequible y potente",
+        "color": "azul"
+      },
+      {
+        "nombre": "Happy 5",
+        "ruta_imagen": "../img/happy5.png",
+        "precio": 899,
+        "descripcion": "El mejor móvil del mercado de 2023 según Mobile Today",
+        "color": "azul"
+      }
+    ]
+  }
+  

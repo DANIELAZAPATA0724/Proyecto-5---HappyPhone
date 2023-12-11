@@ -1,0 +1,20 @@
+{
+    "redes_sociales": [
+      {
+        "nombre": "Instagram",
+        "enlace": "https://www.instagram.com/",
+        "imagen": "./img/instagram.svg"
+      },
+      {
+        "nombre": "TikTok",
+        "enlace": "https://www.tiktok.com/login?lang=es",
+        "imagen": "./img/tiktok.svg"
+      },
+      {
+        "nombre": "YouTube",
+        "enlace": "https://www.youtube.com/",
+        "imagen": "./img/youtube.svg"
+      }
+    ]
+  }
+  
