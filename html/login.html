@@ -24,60 +24,83 @@
             </ul>
         </nav>
     </header>
-    <main class="contacto">
-        <section class="formulario">
-            <h4>INICIO DE SESIÓN</h4>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label>
-                        <img class="logo-user" src="./IMG/envelope.png" alt="email">
-                        <input class="control" id="email" name="email" placeholder="Email" required>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <img class="logo-user" src="./IMG/password.png" alt="contraseña">
-                        <input class="control" id="password" name="password" type="password" placeholder="Password"
-                            required>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <a href="./login.html" target="_blank">
-                            <p>¿Olvidaste la contraseña?</p>
-                        </a>
-                    </label>
-                </div>
-                <div class="form-group">
-                    <label>
-                        <button class="botons" type="submit" formaction="index.html" formtarget="_blank">Iniciar
-                            sesión</button>
-                    </label>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label class="check-term">
-                        <input type="checkbox" required>
-                        <p>*Acepto los <a href="./terms.html"> Términos y Condiciones</p></a>
-                    </label>
-                </div>
-                <div class="form-group2">
-                    <label>
-                        <a href="./register.html" target="_blank">
-                            <p><strong>Crear cuenta</strong></p>
-                        </a>
-                    </label>
-                </div>
-            </form>
-        </section>
-    </main>
-
-
-
-
-
-
-
+    <section class="login-container">
+        <div class="container-form register">
+          <div class="information">
+            <div class="info-childs">
+              <h2>Bienvenido</h2>
+              <p>
+                Para unirte a nuestros servicios por favor Inicia Sesión con tus
+                datos
+              </p>
+              <input type="button" value="Iniciar Sesión" id="Sign-IN" >
+            </div>
+          </div>
+          <div class="form-information">
+            <div class="form-information-childs">
+              <h2>Crear una Cuenta</h2>
+              <div class="icons">
+                <i class="bx bxl-google"></i>
+                <i class="bx bxl-github"></i>
+                <i class="bx bxl-linkedin"></i>
+              </div>
+              <p>o usa tu mail para registrarte</p>
+              <form action="https://goldenhands.netlify.app/" class="form">
+                <label>
+                  <i class="bx bx-user"></i>
+                  <input type="text" placeholder="Nombre Completo" required />
+                </label>
+                <label>
+                  <i class="bx bx-envelope"></i>
+                  <input type="email" placeholder="Correo Electronico" required />
+                </label>
+                <label>
+                  <i class="bx bx-lock-alt"></i>
+                  <input type="password" placeholder="Password" required />
+                </label>
+                <input type="submit" value="Registrarse" />
+              </form>
+            </div>
+          </div>
+        </div>
+  
+        <!– formulario de registro –>
+  
+        <div class="container-form login hide">
+          <div class="information">
+            <div class="info-childs">
+              <h2>Comienza a Registrarte</h2>
+              <p>
+                Para unirte a nuestros servicios por favor Inicia Sesión con tus
+                datos
+              </p>
+              <input type="button" value="Registrarse" id="Sign-Up" />
+            </div>
+          </div>
+          <div class="form-information">
+            <div class="form-information-childs">
+              <h2>Iniciar Sesión</h2>
+              <div class="icons">
+                <i class="bx bxl-google"></i>
+                <i class="bx bxl-github"></i>
+                <i class="bx bxl-linkedin"></i>
+              </div>
+              <p>o inicia sesión con una cuenta</p>
+              <form class="form">
+                <label>
+                  <i class="bx bx-envelope"></i>
+                  <input type="email" placeholder="Correo Electronico" required />
+                </label>
+                <label>
+                  <i class="bx bx-lock-alt"></i>
+                  <input type="password" placeholder="Password" required />
+                </label>
+                <input type="submit" value="Iniciar Sesión" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!--FOOTER-->
     <footer>
