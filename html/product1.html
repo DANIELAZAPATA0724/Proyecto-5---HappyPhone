@@ -20,41 +20,19 @@
                     <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
                     <li class="menu-section"><a href="register.html">Registro</a></li>
                     <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                    <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-                                alt="shoppingcart"></a></li>
+                    <div class="cart">
+                        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                        alt="shoppingcart"><div class="cart-amount">1</div></a>
+                        </li>
+                    </div>
+                    
                 </ul>
             </nav>
         </header>
 
         <!--FICHA PRODUCTO-->
-        <main class="product">
-            <figure class="figure1">
-                <img class="product-image" src="../img/happy1.png" alt="Foto Movil Happy 1">
-            </figure>
-            <article class="main-product">
-
-                <div class="description">
-                    <h2>Happy 1</h2>
-                    <ul class="text-description">
-                        <li>200 MP</li>
-                        <li>256GB｜8GB</li>
-                        <li>Zoom óptico x5</li>
-                        <li>6,1" resolución de pantalla</li>
-                        <li>12MP de cámara frontal</li>
-                    </ul>
-
-                    <h3>299,99€</h3>
-                </div>
-
-                <div class="cantidad">
-                    <button class="btn btn-decrementar">-</button>
-                    <input type="number" class="cantidad-input" value="1" min="1">
-                    <button class="btn btn-incrementar">+</button>
-                </div>
-
-                <a href="./cart.html" target="_blank"> <button class="buy-button">Comprar</button></a>
-
-            </article>
+        <main class="product" id="product">
+            
         </main>
 
 
@@ -84,7 +62,7 @@
 
         </footer>
     </section>
-    <script src="./js/constructor.js"></script>
+    <script src="../js/prod1.js"></script>
 
 </body>
 

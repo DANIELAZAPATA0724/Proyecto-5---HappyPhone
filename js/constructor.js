@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const a = document.createElement('a');
           a.href = `./${movil.nombre}.html`;
           const button = document.createElement('button');
-          button.textContent = 'Comprar';
+          button.textContent = 'Agregar al carrito';
   
           a.appendChild(button);
           divInfo.appendChild(p);
