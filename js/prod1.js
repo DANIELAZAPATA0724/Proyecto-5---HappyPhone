@@ -35,7 +35,7 @@ return(shop.innerHTML = shopItemsData
         <div  id=${id} class="cantidad-input">0</div>
         <button onclick="increment(${id})" class="btn btn-incrementar">+</button>
     </div>
-    <a href="./cart.html" target="_blank"> <button class="buy-button">Agregar al carrito</button></a>
+    <a href="#" target="_blank"> <button class="add-to-cart-btn">Agregar al carrito</button></a>
     </article>`
 }).join(""));
    
@@ -70,12 +70,23 @@ let decrement = (id)=>{
     }
     
     //console.log(basket);
+    update(selectedItem.id);
 };
 
 let update = (id) => {
     let search = basket.find((x)=>x.id === id);
     console.log(search.item);
     document.getElementById(id).innerHTML = search.item;
+    calculation();
 };
 
+//ADD TO CART BTN
+let calculation = () => {
+    let btnCart = document.getElementById("cart-amount");
+    console.log(basket);
+
+
+
+
+};
 

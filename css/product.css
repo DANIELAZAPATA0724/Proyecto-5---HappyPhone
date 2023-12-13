@@ -461,7 +461,7 @@ h3:hover {
   color: #297780;
 }
 
-.buy-button {
+.add-to-cart-btn {
   width: 75%;
   height: 3rem;
   background-color: #2f8f97;
@@ -474,7 +474,7 @@ h3:hover {
   margin: 18px 0px 38px 26px;
 }
 
-.buy-button:hover {
+.add-to-cart-btn:hover {
   cursor: pointer;
   background-color: #297780;
   transform: scale(1.1);
@@ -517,9 +517,6 @@ h3:hover {
 .btn:hover {
   background-color: #2f8f97;
 }
-
-
-
 
 
 /*FOOTER*/
