@@ -19,7 +19,7 @@
     <section class="main-container">
         <!--HEADER-->
         <header>
-            <div><a href="./index.html"><img class="logo-web" src="./img/logo.png"
+            <div><a href="./index.html"><img class="logo-web" src="../img/logo.png"
                         alt="logo_HappyPhone"></a></src>
             </div>
             <nav class="nav-links">
@@ -27,7 +27,7 @@
                     <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
                     <li class="menu-section"><a href="register.html">Registro</a></li>
                     <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                    <li><a href="cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png" alt="shoppingcart"></a></li>
+                    <li><a href="carrito.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png" alt="shoppingcart"></a></li>
                 </ul>
             </nav>
         </header>
@@ -35,7 +35,7 @@
         <!--FICHA PRODUCTO-->
         <main class="product">
             <figure class="figure1">
-                <img class="product-image" src="./img/happy4.png" alt="Foto Movil Happy 4">
+                <img class="product-image" src="../img/happy4.png" alt="Foto Movil Happy 4">
             </figure>
             <article class="main-product">
 
@@ -54,12 +54,13 @@
 
                 <div class="cantidad">
                     <button class="btn btn-decrementar">-</button>
-                    <input type="number" class="cantidad-input" value="1" min="1">
+                    <input type="text" pattern="[0-9]{2}" class="cantidad-input" value="1" min="1">
                     <button class="btn btn-incrementar">+</button>
                 </div>
 
-                <a href="./cart.html" target="_blank"> <button class="buy-button">Comprar</button></a>
-
+                <button class="add-to-cart" data-product-name="Happy 4">Comprar</button>
+                <!-- <button class="clear-cart">Borrar</button> -->
+                <a href="../index.html" class="back-to-catalog">Volver al catálogo</a>
             </article>
         </main>
 
@@ -96,6 +97,7 @@
 
         </footer>
     </section>
+    <script src="../js/product.js"></script>
 
 </body>
 
