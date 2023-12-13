@@ -9,12 +9,13 @@ let shopItemsData = [{
 }
 ]
 
-let basket = [];
+let basket = JSON.parse(localStorage.getItem("data")) || [] ;
 
 let generateProduct = () => {
 return(shop.innerHTML = shopItemsData
     .map((x)=>{
         let {id, name, price, description, img} = x;
+        let search = basket.find((x)=>x.id === id) || [];
     return `<figure class="figure1">
     <img class="product-image" src=${img} alt="Foto Movil Happy 1">
     </figure>
@@ -32,16 +33,15 @@ return(shop.innerHTML = shopItemsData
     </div>
     <div  class="cantidad">
         <button onclick="decrement(${id})" class="btn btn-decrementar">-</button>
-        <div  id=${id} class="cantidad-input">0</div>
+        <div  id=${id} class="cantidad-input">${search.item === undefined ? 0: search.item}</div>
         <button onclick="increment(${id})" class="btn btn-incrementar">+</button>
     </div>
-    <a href="#" target="_blank"> <button id="add-to-cart-btn" class="add-to-cart-btn">Agregar al carrito</button></a>
+    <a href="#" target="_blank"> <button id="add-to-cart-btn" class="add-to-cart-btn">Carrito</button></a>
     </article>`
 }).join(""));
    
 };
 generateProduct()
-
 
 let increment = (id)=>{
     let selectedItem = id;
@@ -55,7 +55,8 @@ let increment = (id)=>{
     }else{
         search.item += 1;
     }
-    
+    //to get and save data from the local storage
+    localStorage.setItem("data",JSON.stringify(basket));
     //console.log(basket);
     update(selectedItem.id);
 };
@@ -68,7 +69,8 @@ let decrement = (id)=>{
     else{
         search.item -= 1;
     }
-    
+    //to get and save data from the local storage
+    localStorage.setItem("data",JSON.stringify(basket));
     //console.log(basket);
     update(selectedItem.id);
 };
@@ -80,10 +82,10 @@ let update = (id) => {
     addUpItems();
 };
 
-//ADD TO CART BTN
+//ADD TO CART
 let addUpItems = () => {
-    let btnCart = document.getElementById("cart-amount");
-    btnCart.innerHTML = basket.map((x) => x.item).reduce((x,y)=>x+y,0);
-
+    let addCart = document.getElementById("cart-amount");
+    addCart.innerHTML = basket.map((x) => x.item).reduce((x,y)=>x+y,0);
 };
 
+addUpItems();
