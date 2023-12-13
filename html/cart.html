@@ -8,38 +8,24 @@
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cart - HappyPhone</title>
-        <link rel="stylesheet" href="../css/cart.css">
-        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
-
-    </head>
-
-    <body>
-        <section>
-
-            <header>
-                <div><a href="index.html"><img class="logo-web" src="./img/logo.png" alt="logo_HappyPhone"></a>
-                    </src>
+    <header>
+        <div>
+            <a href="index.html"><img class="logo-web" src="./img/logo.png" alt="logo_HappyPhone"></a>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
+                <li class="menu-section"><a href="register.html">Registro</a></li>
+                <li class="menu-section"><a href="contact.html">Contacto</a></li>
+                <div class="cart">
+                    <li>
+                        <a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png" alt="shoppingcart">
+                            <div id="cart-amount" class="cart-amount">0</div></a>
+                    </li>
                 </div>
-                <nav class="nav-links">
-                    <ul>
-                        <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
-                        <li class="menu-section"><a href="register.html">Registro</a></li>
-                        <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                        <li><a href="cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png"
-                                    alt="shoppingcart"></a></li>
-                    </ul>
                 </nav>
-            </header>
-        </section>
-
-        <section class="carrito">
+    </header>
+    <section class="carrito">
             <section class="products">
                 <section class="row">
                     <article class="image-text">
@@ -150,8 +136,7 @@
         </footer>
 
         <script src="./js/constructor.js"></script>
+</body>
 
-    </body>
 
-
-    </html>
+</html>

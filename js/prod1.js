@@ -36,7 +36,7 @@ return(shop.innerHTML = shopItemsData
         <div  id=${id} class="cantidad-input">${search.item === undefined ? 0: search.item}</div>
         <button onclick="increment(${id})" class="btn btn-incrementar">+</button>
     </div>
-    <a href="#" target="_blank"> <button id="add-to-cart-btn" class="add-to-cart-btn">Carrito</button></a>
+    <a href="./cart.html" target="_blank"> <button id="add-to-cart-btn" class="add-to-cart-btn">Carrito</button></a>
     </article>`
 }).join(""));
    
