@@ -1,26 +1,26 @@
 let shopItemsData = [{
-    id:"01",
+    id:"H01",
     name:"Happy 1",
     description:"200 MP 256GB｜8GB Zoom óptico x5 6,1pulg resolución de pantalla 12MP de cámara frontal",
     price:"299,99",
     img:"../img/happy1.png"
 },
 {
-    id:"02",
+    id:"H02",
     name:"Happy 2",
     description:"300 MP 256GB｜16GB Zoom óptico x14 7,1pulg resolución de pantalla 24MP de cámara frontal",
     price:"499,99",
     img:"../img/happy2.png"
 },
 {
-    id:"03",
+    id:"H03",
     name:"Happy 3",
     description:"600 MP 512GB｜32GB Zoom óptico x40 6,5pulg resolución de pantalla 18MP de cámara frontal",
     price:"799,99",
     img:"../img/happy3.png"
 },
 {
-    id:"04",
+    id:"H04",
     name:"Happy 4",
     description:"800 MP 1T｜32GB Zoom óptico x54 7,1pulg resolución de pantalla 54MP de cámara frontal",
     price:"999,99",

@@ -1,13 +1,15 @@
 let shop = document.getElementById("product");
 
 let shopItemsData = [{
-    id:"01",
+    id:"H01",
     name:"Happy 1",
     description:"200 MP 256GB｜8GB Zoom óptico x5 6,1pulg resolución de pantalla 12MP de cámara frontal",
     price:"299,99",
     img:"../img/happy1.png"
 }
 ]
+
+let basket = [];
 
 let generateProduct = () => {
 return(shop.innerHTML = shopItemsData
@@ -29,9 +31,9 @@ return(shop.innerHTML = shopItemsData
         <h3>${price}€</h3>
     </div>
     <div  class="cantidad">
-        <button class="btn btn-decrementar">-</button>
+        <button onclick="decrement(${id})" class="btn btn-decrementar">-</button>
         <div  id=${id} class="cantidad-input">0</div>
-        <button class="btn btn-incrementar">+</button>
+        <button onclick="increment(${id})" class="btn btn-incrementar">+</button>
     </div>
     <a href="./cart.html" target="_blank"> <button class="buy-button">Agregar al carrito</button></a>
     </article>`
@@ -40,7 +42,40 @@ return(shop.innerHTML = shopItemsData
 };
 generateProduct()
 
-/*
-let incrementar = ()=>{};
-let decrementar = ()=>{};
-let incrementar = ()=>{};*/
+
+let increment = (id)=>{
+    let selectedItem = id;
+    let search = basket.find((x)=> x.id ===selectedItem.id); //this is going to check all the items one by one
+    
+    if (search === undefined){
+        basket.push({
+            id: selectedItem.id,
+            item: 1,
+        });
+    }else{
+        search.item += 1;
+    }
+    
+    //console.log(basket);
+    update(selectedItem.id);
+};
+
+let decrement = (id)=>{
+    let selectedItem = id;
+    let search = basket.find((x)=> x.id ===selectedItem.id); 
+    //I make it to stop adding items once it becomes "0"
+    if (search.item === 0) return;
+    else{
+        search.item -= 1;
+    }
+    
+    //console.log(basket);
+};
+
+let update = (id) => {
+    let search = basket.find((x)=>x.id === id);
+    console.log(search.item);
+    document.getElementById(id).innerHTML = search.item;
+};
+
+
