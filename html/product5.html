@@ -21,8 +21,12 @@
                     <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
                     <li class="menu-section"><a href="register.html">Registro</a></li>
                     <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                    <li><a href="cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png"
-                                alt="shoppingcart"></a></li>
+                    <div class="cart">
+                        <li><a href="carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                        alt="shoppingcart">
+                        <div id="cart-amount" class="cart-amount">0</div></a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -30,7 +34,7 @@
         <!--FICHA PRODUCTO-->
         <main class="product">
             <figure class="figure1">
-                <img class="product-image" src="./img/happy5.png" alt="Foto Movil Happy 5">
+                <img class="product-image" src="../img/happy5.png" alt="Foto Movil Happy 5">
             </figure>
             <article class="main-product">
 
@@ -46,15 +50,15 @@
 
                     <h3>1050,99€</h3>
                 </div>
-
                 <div class="cantidad">
                     <button class="btn btn-decrementar">-</button>
-                    <input type="number" class="cantidad-input" value="1" min="1">
+                    <input type="number"  class="cantidad-input" value="1" min="1">
                     <button class="btn btn-incrementar">+</button>
                 </div>
 
-                <a href="./cart.html" target="_blank"> <button class="buy-button">Comprar</button></a>
-
+                <button class="add-to-cart" data-product-name="Happy 5">Carrito</button>
+                <!-- <button class="clear-cart">Borrar</button> -->
+                <a href="../index.html" class="back-to-catalog">Volver al catálogo</a>
             </article>
         </main>
 
@@ -86,6 +90,7 @@
         </footer>
     </section>
     <script src="./js/constructor.js"></script>
+    <script src="../js/product.js"></script>
 
 </body>
 
