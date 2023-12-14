@@ -4,28 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/290cdfd1a5.js" crossorigin="anonymous"></script>
     <title>Login - HappyPhone</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
 
 </head>
 
 <body>
 
-    <header>
-        <div><a href="./index.html"><img class="logo-web" src="../img/logo.png" alt="logo_HappyPhone"></a></src>
-        </div>
-        <nav class="nav-links">
-            <ul>
-              <li class="menu-section"><a href="login.html">Login</a></li>
-              <li class="menu-section"><a href="register.html">Registro</a></li>
-              <li class="menu-section"><a href="contact.html">Contacto</a></li>
-              <li><a href="cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png" alt="shoppingcart"></a></li>
-      </ul>
-        </nav>
-    </header>
+  <header-component></header-component>
+  <main>
     <section class="login-container">
       <div class="container-form register">
         <div class="information">
@@ -107,29 +100,9 @@
       </div>
     </section>
     <script src="./validation.js"></script>
-
-    <!--FOOTER-->
-    <footer>
-        <section class="about-footer">
-            <ul>
-                <p><strong><a href="./Aboutus.html">About HappyPhone</a></strong></p>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-            </ul>
-        </section>
-
-        <figure class="rrss-footer" id="redes-sociales-container">
-        </figure>
-
-        <section class="info-footer">
-            <ul>
-                <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-            </ul>
-        </section>
-
-    </footer>
+  </main>
+  <footer-component></footer-component>
+    
     </section>
     <script src="../js/constructor.js"></script>
 

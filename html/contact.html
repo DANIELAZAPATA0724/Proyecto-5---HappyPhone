@@ -3,27 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
     <section class="main-container">
-        <!--MENU NAVEGACION-->
-        <header>
-            <div><a href="../index.html"><img class="logo-web" src="../img/logo.png" alt="logo_HappyPhone"></a></src>
-            </div>
-            <nav class="nav-links">
-                <nav class="nav-links">
-                    <ul>
-                        <li class="menu-section"><a href="../html/login.html">Inicio sesión</a></li>
-                        <li class="menu-section"><a href="../html/register.html">Registro</a></li>
-                        <li class="menu-section"><a href="../html/contact.html">Contacto</a></li>
-                        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-                                    alt="shoppingcart"></a></li>
-                    </ul>
-                </nav>
-        </header>
-<main class="contacto">
+        <header-component></header-component>
+        
+ <main class="contacto">
     <section class="formulario">
         <h4>NUESTRO EQUIPO SE PONDRÁ EN CONTACTO CONTIGO</h4>
         <form id="contactForm" action="#" method="post">
@@ -69,38 +57,16 @@
             <a href="https://web.whatsapp.com/"><img class="logo-whatsapp" src="../img/whatsapp.png" alt="logo de WhatsApp"></a>
         </div>
     </section>
-    <figure class="mapa">
+  <figure class="mapa">
         <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.5506301469377!2d-3.7021057241135527!3d40.39665107144289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226346cdb5ebb%3A0x73a304caeab8973a!2sC.%20Fernando%20Poo%2C%2025%2C%2028045%20Madrid!5e0!3m2!1ses!2ses!4v1699288986331!5m2!1ses!2ses"
         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
         alt="mapa de google map señalando la ubicación"></iframe>
-    </figure>
+  </figure>
 </main>
 
-        <!--FOOTER-->
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="#">About HappyPhone</a></strong></p>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </section>
-
-            <figure class="rrss-footer" id="redes-sociales-container">
-            </figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-
-        </footer>
-
+        <footer-component></footer-component>
     </section>
     <script src="./contacto.js"></script>
 

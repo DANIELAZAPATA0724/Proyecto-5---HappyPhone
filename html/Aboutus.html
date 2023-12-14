@@ -4,24 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home - HappyPhone</title>
     <link rel="stylesheet" href="../css/Aboutus.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <script src="./js/constructor.js"></script>
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
 </head>
-<body>
-        <!--HEADER-->
-        <header>
-            <div><a href="./index.html"><img class="logo-web" src="./img/logo.png" alt="logo_HappyPhone"></a></src></div>
-            <nav class="nav-links">
-                <ul>
-                    <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
-                    <li class="menu-section"><a href="register.html">Registro</a></li>
-                    <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                    <li><a href="cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png" alt="shoppingcart"></a></li>
-                    </ul>
-            </nav>
-        </header>
+    <body>
+        <header-component></header-component>
 
         <main>
             <section class="bienvenido">
@@ -44,28 +36,8 @@
               <p>Buscamos ser líderes en innovación y excelencia en la industria de la telefonía móvil. Nos comprometemos a seguir evolucionando, explorando nuevas tecnologías y tendencias para proporcionar a nuestros clientes las últimas novedades y soluciones en comunicación móvil. Por ello, Nuestra visión se centra en crear experiencias excepcionales para cada cliente. Desde la selección cuidadosa de productos hasta la atención personalizada, nos esforzamos por convertir cada visita a Happy Phone en una experiencia gratificante y enriquecedor. <br> En Happy Phone, estamos emocionados de ser parte de tu viaje tecnológico. <br><br><br><strong>¡Gracias por elegirnos como tu destino, para todo lo relacionado con teléfonos móviles!</strong></p>
             </section>
         </main>
-        <!--FOOTER-->
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="./Aboutus.html">About HappyPhone</a></strong></p>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </section>
-
-            <figure class="rrss-footer" id="redes-sociales-container">
-            </figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-
-        </footer>
+        
+        <footer-component></footer-component>
     
-</body>
+    </body>
 </html>
