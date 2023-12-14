@@ -26,81 +26,12 @@
                 </div>
                 </nav>
     </header>
-    <section class="carrito">
-            <section class="products">
-                <section class="row">
-                    <article class="image-text">
-                        <figure>
-                            <h3>Artículo</h3>
-                            <img class="image-product" src="./img/happy4.png" alt="phone1">
-                        </figure>
-                        <section class="description">
-                            <h2>Happy 4</h2>
-                            <ul>
-                                <li>200MP</li>
-                                <li>256GB | 8GB</li>
-                                <li>Zoom óptico x5</li>
-                            </ul>
-                        </section>
-                    </article>
+    <main>
+        <div id="label" class="text-center"></div>
 
-                    <section class="price">
-                        <h3>Precio</h3>
-                        <section class="mini-price">
-                            <p>299.99€</p>
-                        </section>
-                    </section>
-                    <section class="quantity">
-                        <h3>Cantidad</h3>
-                        <div class="cantidad">
-                            <button class="btn btn-decrementar">-</button>
-                            <input type="number" class="cantidad-input" value="1" min="1">
-                            <button class="btn btn-incrementar">+</button>
-                        </div>
-                    </section>
-
-
-                </section>
-
-                <section class="row">
-                    <article class="image-text">
-                        <figure>
-                            <h3>Artículo</h3>
-                            <img class="image-product" src="./img/happy5.png" alt="phone1">
-                        </figure>
-                        <section class="description">
-                            <h2>Happy 3</h2>
-                            <ul>
-                                <li>400MP</li>
-                                <li>512GB | 16GB</li>
-                                <li>Zoom óptico x10</li>
-                            </ul>
-                        </section>
-                    </article>
-
-                    <section class="price">
-                        <h3>Precio</h3>
-                        <section class="mini-price">
-                            <p>299.99€</p>
-                        </section>
-                    </section>
-                    <section class="quantity">
-                        <h3>Cantidad</h3>
-                        <div class="cantidad">
-                            <button class="btn btn-decrementar">-</button>
-                            <input type="number" class="cantidad-input" value="1" min="1">
-                            <button class="btn btn-incrementar">+</button>
-                        </div>
-                    </section>
-
-
-                </section>
-
-
-
-            </section>
-
-            <section class="colum2">
+        <div class="carrito" id="shopping-cart"></div>
+        
+            <!--<section class="colum2">
                 <h3>Total del pedido</h3>
                 <p>699.98€</p>
                 <a href="thanks.html"><button class="botons">Tramitar pedido</button></a>
@@ -109,34 +40,35 @@
                     *Los costos de envío reales se calcularán en función de su destino de envío y se mostrarán en la
                     página de pago.</p>
                 <img src="./img/paypal.png" alt="icono compra segura paypal">
-            </section>
+            </section>-->
 
+        
+
+    </main>
+    
+    <footer>
+        <section class="about-footer">
+            <ul>
+                <p><strong><a href="#">About HappyPhone</a></strong></p>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </section>
+        <figure class="rrss-footer" id="redes-sociales-container">
+        </figure>
+
+        <section class="info-footer">
+            <ul>
+                <p><strong><a href="#" target="_blank">Más información</a></strong></p>
+                <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
+                <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
+            </ul>
         </section>
 
-        <!--FOOTER-->
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="#">About HappyPhone</a></strong></p>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </section>
-
-            <figure class="rrss-footer" id="redes-sociales-container">
-            </figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-
-        </footer>
-
-        <script src="./js/constructor.js"></script>
+    </footer>
+    
+    <script src="../js/data.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 
 

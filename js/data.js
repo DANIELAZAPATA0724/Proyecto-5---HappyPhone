@@ -27,7 +27,7 @@ let shopItemsData = [{
     img:"../img/happy4.png"
 },
 {
-    id:"05",
+    id:"H05",
     name:"Happy 5",
     description:"900 MP 1T｜32GB Zoom óptico 4 7,3pulg resolución de pantalla 56MP de cámara frontal",
     price:"1050,99",
