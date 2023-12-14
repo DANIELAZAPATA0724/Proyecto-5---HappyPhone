@@ -22,10 +22,27 @@ header {
   /* display: grid; */
 }
 
+
 .nav-links {
   display: flex;
   justify-content: end;
 
+}
+/*carrito de compra cantidad*/
+.logo-shoppingcart {
+  width: 40px;
+}
+.cart{
+  position: relative;
+}
+.cart-amount{
+  position: absolute;
+  background-color:red;
+  top: -12px;
+  right: -7px;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 3px;
 }
 
 header ul {

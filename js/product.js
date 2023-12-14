@@ -81,3 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+let addUpItems = () => {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Obtiene el carrito del localStorage
+    let totalItems = carrito.reduce((total, item) => total + item.cantidad, 0); // Calcula el total de elementos en el carrito
+
+    let addCart = document.getElementById("cart-amount");
+    addCart.innerHTML = totalItems; // Muestra el número total de elementos en el carrito en el elemento con id "cart-amount"
+};
+
+addUpItems(); // Invoca la función para mostrar la cantidad inicial de elementos en el carrito

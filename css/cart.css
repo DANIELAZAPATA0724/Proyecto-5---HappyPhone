@@ -7,16 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-img{
-    width: 10rem;
-   
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center
-}
+
+
 
 /*HEADER*/
 
@@ -49,6 +41,7 @@ header ul {
     align-items: center;
 }
 
+
 .menu-section {
     font-weight: bold;
     font-size: large;
@@ -67,17 +60,22 @@ a:hover {
     cursor: pointer;
     color: #297780;
 }
-
-.logo-web {
-    width: 4rem;
-    display: grid;
-    justify-content: start;
-    margin-left: 1rem;
-}
-
+/*carrito de compra cantidad*/
 .logo-shoppingcart {
     width: 40px;
-}
+  }
+
+.cart-amount{
+    position: absolute;
+    background-color:red;
+    top: -12px;
+    right: -7px;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+
+
 
 figure.logo-rrss img {
     width: 30px;
@@ -155,13 +153,16 @@ li {
     justify-content: flex-end;
 }
 
+.logo-web {
+    width: 4rem;
+    display: grid;
+    justify-content: start;
+    margin-left: 1rem;
+  }
 
-
+/*estilo carrito*/
 .cart {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
     text-align: center;
 }
 
