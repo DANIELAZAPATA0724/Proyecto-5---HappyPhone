@@ -71,7 +71,14 @@ document.addEventListener("DOMContentLoaded", function() {
     else
     {
       document.getElementById("frameBuscar").style.display="block";
-      document.getElementById("frameBuscar").contentDocument.getElementById("inpBusq").focus();
+      document.getElementById("inpBusq").focus();
     }
-
   }
+  const input = document.getElementById("inpBusq");
+  input.addEventListener("keyup", function(event) {
+    if (event.key === 'Enter') {
+      console.log("Tecla Enter presionada");
+      alert(1);
+    }
+  });
+  

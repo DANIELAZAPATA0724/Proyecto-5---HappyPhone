@@ -7,7 +7,6 @@
     <title>Home - HappyPhone</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <script src="./js/constructor.js"></script>
 </head>
 <body>
         <!--HEADER-->
@@ -20,7 +19,7 @@
                     <li class="menu-section"><a onclick="muestraBusqueda();">🔍</a></li>
                     <li><a href="./html/cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png" alt="shoppingcart"></a></li>
                 </ul>
-                <iframe src="./html/busqueda.html" frameborder="1" id="frameBuscar" style="display: none;"></iframe>
+                <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
             </nav>
         </header>
 
@@ -67,5 +66,6 @@
             </section>
 
         </footer>
+        <script src="./js/constructor.js"></script>
 </body>
 </html>
