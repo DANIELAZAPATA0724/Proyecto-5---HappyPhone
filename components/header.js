@@ -158,26 +158,26 @@ customElements.define("header-component", Header);
 
 function crearIconosRedesSociales(container) {
   // Nombres de los archivos SVG
-  const nombresIconos = ['instagram', 'tiktok', 'youtube'];
+  const nombresIconos = ["instagram", "tiktok", "youtube"];
 
   // Itera sobre los nombres de los iconos y crea elementos SVG para cada uno
   nombresIconos.forEach((nombreIcono) => {
     const icono = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    icono.classList.add('logo-rrss');
-    icono.setAttribute('width', '24'); // Ajusta el tamaño según tus necesidades
+    icono.classList.add("logo-rrss");
+    icono.setAttribute("width", "24"); // Ajusta el tamaño según tus necesidades
 
     // Ajusta la ruta del atributo 'src' según la ubicación de tus archivos SVG
     icono.innerHTML = `<use xlink:href="../img/${nombreIcono}.svg"></use>`;
-    
+
     container.appendChild(icono);
   });
 }
 
 // En tu constructor.js o donde tengas tu lógica para crear el footer
-document.addEventListener('DOMContentLoaded', function () {
-  const footerContainer = document.querySelector('footer'); // Ajusta el selector según tu estructura HTML
-  const redesSocialesContainer = document.createElement('div');
-  redesSocialesContainer.classList.add('rrss-footer', 'flex-container'); // Agrega la clase 'flex-container' para centrar los iconos
+document.addEventListener("DOMContentLoaded", function () {
+  const footerContainer = document.querySelector("footer"); // Ajusta el selector según tu estructura HTML
+  const redesSocialesContainer = document.createElement("div");
+  redesSocialesContainer.classList.add("rrss-footer", "flex-container"); // Agrega la clase 'flex-container' para centrar los iconos
   footerContainer.appendChild(redesSocialesContainer);
 
   // Llama a la función para crear los iconos dentro del elemento 'rrss-footer'
