@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cart - HappyPhone</title>
+        <link rel="stylesheet" href="../css/cart.css">
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+        <script src="https://www.paypal.com/sdk/js?client-id=AaES8QMv9WMSe1ygcQioZNoznVYbgSLms6XWGAGiAUuD0i3Y8TjgSgf-u0NmKXlcGFY0_wMYigMVEpjc"></script>
+
+    </head>
+
+    <body>
+        <section>
+
+            <header>
+                <div><a href="index.html"><img class="logo-web" src="../img/logo.png" alt="logo_HappyPhone"></a>
+                    </src>
+                </div>
+                <nav class="nav-links">
+                    <ul>
+                        <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
+                        <li class="menu-section"><a href="register.html">Registro</a></li>
+                        <li class="menu-section"><a href="contact.html">Contacto</a></li>
+                        <div class="cart">
+                            <li><a href="carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                            alt="shoppingcart">
+                            <div id="cart-amount" class="cart-amount">0</div></a>
+                            </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <aside class="cart">
+            <h2>Carrito</h2>
+            <ul class="cart-items"></ul>
+            <div class="total">
+                
+                <p>Total: <span class="total-amount">0</span>€</p>
+                <p>Elegir método de pago:</p>
+            <label><input type="radio" name="payment" value="bizum"> Bizum</label>
+            <label><input type="radio" name="payment" value="tarjeta"> Tarjeta</label>
+            <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+           <br/>
+           <br/>
+            <button class="pay-now" id="paypal-button">Pagar ahora</button>
+            <button class="clear-cart">Limpiar carrito</button>
+            <button class="continue-shopping">Seguir comprando</button>
+
+            </div>
+        </aside>
+      
+    
+        
+        <!--FOOTER-->
+        <footer>
+            <section class="about-footer">
+                <ul>
+                    <p><strong><a href="#">About HappyPhone</a></strong></p>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+            </section>
+
+            <figure class="rrss-footer" id="redes-sociales-container">
+            </figure>
+
+            <section class="info-footer">
+                <ul>
+                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
+                    <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
+                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
+                </ul>
+            </section>
+
+        </footer>
+<script src="../js/constructor.js"></script>
+        <script src="../js/carrito.js"></script>
+        <script src="../js/product.js"></script>
+
+    </body>
+
+
+    </html>

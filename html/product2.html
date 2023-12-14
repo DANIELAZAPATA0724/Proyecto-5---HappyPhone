@@ -21,7 +21,12 @@
                     <li class="menu-section"><a href="../html/login.html">Inicio sesión</a></li>
                     <li class="menu-section"><a href="../html/register.html">Registro</a></li>
                     <li class="menu-section"><a href="../html/contact.html">Contacto</a></li>
-                    <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png" alt="shoppingcart"></a></li>
+                    <div class="cart">
+                        <li><a href="carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                        alt="shoppingcart">
+                        <div id="cart-amount" class="cart-amount">0</div></a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -48,12 +53,12 @@
 
                 <div class="cantidad">
                     <button class="btn btn-decrementar">-</button>
-                    <input type="number" class="cantidad-input" value="1" min="1">
+                    <input type="text" pattern="[0-9]{2}" class="cantidad-input" value="1" min="1">
                     <button class="btn btn-incrementar">+</button>
                 </div>
-
-                <a href="../html/cart.html" target="_blank"> <button class="buy-button">Comprar</button></a>
-
+                <button class="add-to-cart" data-product-name="Happy 2">Comprar</button>
+                <!-- <button class="clear-cart">Borrar</button> -->
+                <a href="../index.html" class="back-to-catalog">Volver al catálogo</a>
             </article>
         </main>
 
@@ -84,7 +89,8 @@
 
         </footer>
     </section>
-    <script src="../js/constructor.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="./js/constructor.js"></script>
 
 </body>
 
