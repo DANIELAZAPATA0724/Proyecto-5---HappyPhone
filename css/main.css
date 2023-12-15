@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "poppB";
+  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppR";
+  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppM";
+  src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: "poppM";
+}
+
+main {
+  flex: 1 0 auto;
+}
