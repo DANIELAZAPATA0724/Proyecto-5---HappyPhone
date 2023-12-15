@@ -81,16 +81,22 @@ a:hover{
 }
 
 /*CARRITO COMPRA*/
-.logo-shoppingcart{
+.logo-shoppingcart {
     width: 40px;
-
-    transition: all .7s; 
-}
-
-.logo-shoppingcart:hover{
-    transform: scale(1.3); 
-}
-
+  }
+  .cart{
+    position: relative;
+  }
+  .cart-amount{
+    position: absolute;
+    background-color:red;
+    top: -12px;
+    right: -7px;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
 .main-container{
     
     height: 100vh;
@@ -133,7 +139,7 @@ ul{
     width: 100%;
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
     justify-content: space-between;
 }
 .main-offer figure{
@@ -232,16 +238,14 @@ article.product:hover{
     border-radius: 5px;
     box-shadow:0 3px 5px 0px #000;
     color: #ffff;
-
     font-size: large;
     font-weight: 500;
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 .info-product button:hover{
-    cursor: pointer; /*Así cambiamos el cursor por una mano */
+    cursor: pointer; 
     background-color: #297780;
-   
     transform: scale(1.1); 
     transition: all .5s; 
 }
@@ -327,3 +331,16 @@ footer{
 }
 
 
+#frameBuscar{
+    width: 170px;
+    height: 28px;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    z-index: 1;
+    display:none;
+    overflow: hidden;
+}
