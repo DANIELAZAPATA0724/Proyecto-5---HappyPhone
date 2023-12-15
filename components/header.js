@@ -123,13 +123,15 @@ a img {
       <div class="logo">
         <img src="../img/logo.png" alt="Logo">
       </div>
+      
       <div class="menu-icon">
       <img class="menu-icon"src="../img/menu.png" alt="Logo">
       </div>
       <ul>
         <li><a href="../html/login.html">Inicia Sesión</a></li>
         <li><a href="../html/login.html">Contacto</a></li>
-        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" alt="lupa"></a></li>        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png" alt="shoppingcart"></a></li>
+        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" alt="lupa"></a></li>        
+        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png" alt="shoppingcart"></a></li>
       </ul>
     </nav>
   </header>

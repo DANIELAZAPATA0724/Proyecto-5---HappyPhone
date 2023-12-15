@@ -93,7 +93,7 @@ a:hover{
         <section class="about-footer">
             <ul>
                 <p><strong><a href="../html/aboutus.html">About HappyPhone</a></strong></p>
-                <li><a href="../html/help.html">Ayuda</a></li>
+                <li><a href="../html/technicalservice.html">Servicio Técnico</a></li>
                 <li><a href="../html/aboutus.html">Sobre nosotros</a></li>
             </ul>
         </section>
