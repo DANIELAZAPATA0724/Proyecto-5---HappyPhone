@@ -74,6 +74,24 @@ nav ul {
 align-content: r;
 }
 
+.logo-shoppingcart {
+  width: 30px;
+}
+
+.cart{
+  position: absolute;
+}
+
+.cart-amount{
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  font-size: 14px;
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
   nav ul {
     display: none;
@@ -101,21 +119,27 @@ align-content: r;
     height: 30px;
     padding-inline-end: 10%;
   }
-
-}
-.logo-shoppingcart{
-  width: 30px;
-
-  transition: all .7s; 
-}
-
-.logo-shoppingcart:hover{
-  transform: scale(1.3); 
+  .logo-shoppingcart {
+    width: 30px;
+    margin-right: 26px;
+  }
+  
+  .cart{
+    position: absolute;
+  }
+  
+  .cart-amount{
+    position: relative;
+    top: -44px;
+    right: 15px;
+    font-size: 14px;
+  }
 }
 
 a img {
   width: 30px;
 }
+
 
   </style>
   <header>
@@ -123,7 +147,6 @@ a img {
       <div class="logo">
         <img src="../img/logo.png" alt="Logo">
       </div>
-      
       <div class="menu-icon">
       <img class="menu-icon"src="../img/menu.png" alt="Logo">
       </div>
@@ -131,8 +154,17 @@ a img {
         <li><a href="../html/login.html">Inicia Sesión</a></li>
         <li><a href="../html/login.html">Contacto</a></li>
         <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" alt="lupa"></a></li>        
-        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png" alt="shoppingcart"></a></li>
-      </ul>
+       
+        <li>
+
+        <div class="cart">
+        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+        alt="shoppingcart">
+        <div id="cart-amount" class="cart-amount">0</div></a>
+        </li>
+        </li>
+    </div>
+    </ul>
     </nav>
   </header>
 `;
