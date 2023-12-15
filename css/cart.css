@@ -7,6 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+
+/*HEADER*/
+
+
 /**HEADER**/
 header {
     background-color: #D9D9D9;
@@ -28,9 +34,10 @@ header {
     margin-right: 1rem;
     justify-content: end;
     align-items: center;
-  }
-  
-  .menu-section {
+}
+
+
+.menu-section {
     font-weight: bold;
     font-size: large;
   }
@@ -47,23 +54,13 @@ header {
   .menu-section:hover {
     cursor: pointer;
     color: #297780;
-  }
-  
-  .logo-web {
-    width: 4rem;
-    display: grid;
-    justify-content: start;
-    margin-left: 1rem;
-  }
-
-  /**Carrito de compra HEADER**/
-  .logo-shoppingcart {
+}
+/*carrito de compra cantidad*/
+.logo-shoppingcart {
     width: 40px;
   }
-  .cart{
-    position: relative;
-  }
-  .cart-amount{
+
+.cart-amount{
     position: absolute;
     background-color:red;
     top: -12px;
@@ -72,16 +69,30 @@ header {
     padding: 3px;
     border-radius: 3px;
   }
-  
-  figure.logo-rrss img {
+
+
+
+figure.logo-rrss img {
     width: 30px;
     border: 1px solid black;
-  }
+}
 
-/** CARRITO COMPRA */
- 
+.main-container {
+    /* background-color: red; */
+    /* border: 3px solid black; */
+    height: 100vh;
 
-/**!FOOTER*/
+    display: grid;
+    grid-template-rows: 1fr 6fr 4fr 1fr;
+
+
+}
+
+
+
+/*FOOTER*/
+
+/*FOOTER*/
 
 footer {
     background-color: #D9D9D9;
@@ -135,4 +146,76 @@ footer {
 li {
     display: grid;
     justify-content: flex-end;
+}
+
+.logo-web {
+    width: 4rem;
+    display: grid;
+    justify-content: start;
+    margin-left: 1rem;
+  }
+
+/*estilo carrito*/
+.cart {
+    position: relative;
+    text-align: center;
+}
+
+.cart h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cart-items li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    width: 80px; /* Tamaño deseado para las imágenes */
+    height: auto;
+    border-radius: 8px;
+}
+
+.total {
+    margin-top: 30px;
+}
+
+.clear-cart,
+.continue-shopping,
+.pay-now {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-methods label {
+    font-size: 14px;
+}
+
+.total p {
+    font-size: 18px;
+    margin-bottom: 10px;
 }

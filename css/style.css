@@ -139,7 +139,7 @@ ul{
     width: 100%;
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
     justify-content: space-between;
 }
 .main-offer figure{
@@ -331,3 +331,16 @@ footer{
 }
 
 
+#frameBuscar{
+    width: 170px;
+    height: 28px;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 80px;
+    right: 0px;
+    z-index: 1;
+    display:none;
+    overflow: hidden;
+}

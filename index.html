@@ -1,75 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--HEAD-->
+<!--HEAD-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - HappyPhone</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <script src="./js/constructor.js"></script>
 </head>
+
 <body>
+
         <!--HEADER-->
         <header>
             <div><a href="./index.html"><img class="logo-web" src="./img/logo.png" alt="logo_HappyPhone"></a></src></div>
             <nav class="nav-links">
                 <ul>
-                    <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
-                    <li class="menu-section"><a href="register.html">Registro</a></li>
-                    <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                    <div class="cart">
-                        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-                        alt="shoppingcart"><div class="cart-amount">1</div></a>
-                        </li>
-                    </div>           
+                    <li class="menu-section"><a href="./html/login.html">Inicio sesión</a></li>
+                    <li class="menu-section"><a href="./html/contact.html">Contacto</a></li>
+                    <li class="menu-section"><a onclick="muestraBusqueda();">🔍</a></li>
+                    <li><a href="./html/cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png" alt="shoppingcart"></a></li>
                 </ul>
+                <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
             </nav>
         </header>
 
         <!--OFERTA PRINCIPAL-->
-        <main class="main-offer" href="./product.html">
+        <main class="main-offer">
             <figure>
-                <a><img class="main-image" src="./img/Movil_Inicio.png" alt="Foto con oferta de movil de lanzamiento"></a>
+                <a href="./html/product.html"><img class="main-image" src="./img/Movil_Inicio.png" alt="Foto con oferta de movil de lanzamiento"></a>
             </figure>
             
             <article class="main-text">
                 <h1>Consigue tu HappyZ Flip con HappyPhone</h1>
                 <h4>Aprovecha nuestra oferta de lanzamiento</h4>
-                <a href="./product.html"><button class="main-button">¡Descúbrelo!</button></a>
+                <a href="./html/product.html"><button class="main-button">¡Descúbrelo!</button></a>
             </article>
         </main>
         
        <!--CAROUSEL PRODUCTOS-->
        <section class="carousel-products" id="carousel-products">
        </section>
-        
 
+    <!--FOOTER-->
+    <footer>
+        <section class="about-footer">
+            <ul>
+                <p><strong><a href="#">About HappyPhone</a></strong></p>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </section>
 
+        <figure class="rrss-footer" id="redes-sociales-container">
+        </figure>
 
+        <section class="info-footer">
+            <ul>
+                <p><strong><a href="#" target="_blank">Más información</a></strong></p>
+                <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
+                <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
+            </ul>
+        </section>
 
-        <!--FOOTER-->
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="#">About HappyPhone</a></strong></p>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </section>
-
-            <figure class="rrss-footer" id="redes-sociales-container">
-            </figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-
-        </footer>
-    
+    </footer>
+        <script src="./js/constructor.js"></script>
 </body>
+
 </html>
