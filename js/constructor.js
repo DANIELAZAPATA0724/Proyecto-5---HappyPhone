@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
           const p = document.createElement('p');
           p.textContent = movil.nombre;
           const a = document.createElement('a');
-          a.href = `./${movil.nombre}.html`;
+          a.href = `../html/${movil.clave}.html`;
           const button = document.createElement('button');
-          button.textContent = 'Comprar';
+          button.textContent = 'Ver';
   
           a.appendChild(button);
           divInfo.appendChild(p);
@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .catch(error => console.error('Error al obtener el archivo JSON:', error));
   });
+
 
  // Constructor del login/registro dinamico
  const btnSignIn = document.getElementById('Sign-IN');  // Cambié 'Sign-Up' a 'Sign-IN' si selecciono el botón de inicio de sesión.
@@ -168,3 +169,27 @@ form.addEventListener('submit' , (e) => {
     .catch(err => console.error(err))
 
 })
+
+  
+
+  function muestraBusqueda()
+  {
+    let a = document.getElementById("frameBuscar").style.display;
+    if(a==="block")
+    {
+      document.getElementById("frameBuscar").style.display="none";
+    }
+    else
+    {
+      document.getElementById("frameBuscar").style.display="block";
+      document.getElementById("inpBusq").focus();
+    }
+  }
+  const input = document.getElementById("inpBusq");
+  input.addEventListener("keyup", function(event) {
+    if (event.key === 'Enter') {
+      console.log("Tecla Enter presionada");
+      alert(1);
+    }
+  });
+  
