@@ -7,29 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy 2 - HappyPhone</title>
     <link rel="stylesheet" href="../css/product.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <section class="main-container">
-        <!--HEADER-->
-        <header>
-            <div><a href="../index.html"><img class="logo-web" src="../img/logo.png"
-                        alt="logo_HappyPhone"></a></src>
-            </div>
-            <nav class="nav-links">
-                <ul>
-                    <li class="menu-section"><a href="../html/login.html">Inicio sesión</a></li>
-                    <li class="menu-section"><a href="../html/register.html">Registro</a></li>
-                    <li class="menu-section"><a href="../html/contact.html">Contacto</a></li>
-                    <div class="cart">
-                        <li><a href="carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-                        alt="shoppingcart">
-                        <div id="cart-amount" class="cart-amount">0</div></a>
-                        </li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
+    <header-component></header-component>
+
 
         <!--FICHA PRODUCTO-->
         <main class="product">
@@ -62,35 +47,10 @@
             </article>
         </main>
 
-
-
-
-
-        <!--FOOTER-->
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="#">About HappyPhone</a></strong></p>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </section>
-
-            <figure class="rrss-footer" id="redes-sociales-container">
-            </figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="../html/terms.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-
-        </footer>
-    </section>
-    <script src="../js/product.js"></script>
-    <script src="./js/constructor.js"></script>
+        <script src="../js/product.js"></script>
+        <script src="../js/constructor.js"></script>
+    
+    <footer-component></footer-component>
 
 </body>
 
