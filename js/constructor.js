@@ -154,7 +154,7 @@ form.addEventListener('submit' , (e) => {
 
     const captchaResponse = grecaptcha.getResponse();
 
-    if(captchaResponse.length > 0) {
+    if(!captchaResponse.length > 0) {
         throw new Error("Captcha not complete");
     }
 
