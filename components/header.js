@@ -152,7 +152,7 @@ a img {
       </div>
       <ul>
         <li><a href="../html/login.html">Inicia Sesión</a></li>
-        <li><a href="../html/login.html">Contacto</a></li>
+        <li><a href="../html/contact.html">Contacto</a></li>
         <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" alt="lupa"></a></li>        
        
         <li>
