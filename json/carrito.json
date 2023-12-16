@@ -30,7 +30,7 @@
     {
       "id": 4,
       "nombre": "Happy 4",
-      "imagen": "../img/happy4.svgg",
+      "imagen": "../img/happy4.svg",
       "precio": 399,
       "descripcion": "Asequible y potente",
       "color": "azul",
