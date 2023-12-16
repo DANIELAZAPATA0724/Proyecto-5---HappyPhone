@@ -15,12 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
     decrementBtns.forEach((decrementBtn, index) => {
         decrementBtn.addEventListener('click', () => {
             let cantidad = parseInt(quantityInputs[index].value);
-            if (cantidad > 1) {
+            if (cantidad > 0) {
                 cantidad--;
                 quantityInputs[index].value = cantidad;
             }
         });
     });
+
+    const carritoInicial = JSON.parse(localStorage.getItem('carrito'));
+    if (!carritoInicial || carritoInicial.length === 0) {
+        localStorage.setItem('carrito', JSON.stringify([]));
+    }
 
     addToCartBtns.forEach((addToCartBtn, index) => {
         addToCartBtn.addEventListener('click', () => {
@@ -80,13 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = './index.html'; // Redirige a la página de inicio
         });
     }
+
+    let addUpItems = () => {
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Obtiene el carrito del localStorage
+        let totalItems = carrito.reduce((total, item) => total + item.cantidad, 0); // Calcula el total de elementos en el carrito
+
+        let addCart = document.getElementById("cart-amount");
+        addCart.innerHTML = totalItems; // Muestra el número total de elementos en el carrito en el elemento con id "cart-amount"
+    };
+
+    addUpItems(); // Invoca la función para mostrar la cantidad inicial de elementos en el carrito
 });
-let addUpItems = () => {
-    let carrito = JSON.parse(localStorage.getItem('carrito')) || []; // Obtiene el carrito del localStorage
-    let totalItems = carrito.reduce((total, item) => total + item.cantidad, 0); // Calcula el total de elementos en el carrito
-
-    let addCart = document.getElementById("cart-amount");
-    addCart.innerHTML = totalItems; // Muestra el número total de elementos en el carrito en el elemento con id "cart-amount"
-};
-
-addUpItems(); // Invoca la función para mostrar la cantidad inicial de elementos en el carrito
