@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Agregar imagen del producto
             const image = document.createElement('img');
             const numeroProducto = item.nombre.split(' ')[1]; // Obtener el número del nombre del producto
+
             
             let imageUrl = `../img/happy${numeroProducto}.svg`;
             

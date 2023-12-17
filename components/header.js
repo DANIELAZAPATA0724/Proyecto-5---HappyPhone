@@ -165,12 +165,11 @@ align-content: r;
       <ul>
         <li><a href="../html/login.html">Inicia Sesión</a></li>
         <li><a href="../html/contact.html">Contacto</a></li>
-        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" class="lupa" alt="lupa"></a></li>
-        <li>
+        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" class="lupa" alt="Buscar"></a></li>
         <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
-
+        <li>
         <div class="cart">
-        <li><a href="carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
         alt="shoppingcart">
         <div id="cart-amount" class="cart-amount">0</div></a>
         </li>
@@ -183,6 +182,7 @@ align-content: r;
 
     </nav>
   </header>
+
 `;
 
 class Header extends HTMLElement {
@@ -200,6 +200,7 @@ class Header extends HTMLElement {
 
     menuIcon.addEventListener("click", () => {
       navList.classList.toggle("show");
+      document.getElementById("frameBuscar").style.display="none";
     });
   }
 }
