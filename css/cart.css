@@ -28,25 +28,6 @@
   }
 
 
-aside {
-   height: 100vh;
-   display: grid;
-   grid-template-columns: 1fr;
-
-   align-items: center;
-   justify-content: center;
-    
-
-}
-
-h2{
-    font-size:large;
-    font-weight: bold;
-}
-
-
-/*FOOTER*/
-
 /*FOOTER*/
 
 footer {
@@ -173,4 +154,7 @@ li {
 .total p {
     font-size: 18px;
     margin-bottom: 10px;
+}
+.total{
+    margin-bottom: 1rem;
 }
