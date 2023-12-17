@@ -6,9 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy 4 - HappyPhone</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;800&family=Poppins:wght@200;400;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../css/product.css">
     <link href="../css/main.css" rel="stylesheet" type="text/css" />
     <script src="../components/header.js" type="text/javascript" defer></script>
@@ -17,12 +14,13 @@
 </head>
 
 <body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
     <header-component></header-component>
   
         <!--FICHA PRODUCTO-->
         <main class="product">
             <figure class="figure1">
-                <img class="product-image" src="../img/happy4.png" alt="Foto Movil Happy 4">
+                <img class="product-image" src="../img/happy4.svg" alt="Foto Movil Happy 4">
             </figure>
             <article class="main-product">
 
@@ -51,39 +49,8 @@
             </article>
         </main>
 
-
-
-
-
         <!--FOOTER-->
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">About HappyPhone</a></strong></p>
-                    <li><a href="#" target="_blank">Ayuda</a></li>
-                    <li><a href="#" target="_blank">Sobre nosotros</a></li>
-                </ul>
-            </section>
-
-            <figure class="rrss-footer">
-                <a href="https://www.instagram.com/" target="_blank"><img class="logo-rrss" src="./img/instagram.png"
-                        alt="logo_instagram"></a>
-                <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des"
-                    target="_blank"><img class="logo-rrss" src="./img/tiktok.png" alt="logo_tiktok"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img class="logo-rrss" src="./img/youtube.png"
-                        alt="logo_youtube"></a>
-            </figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="term.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-
-        </footer>
-    </section>
+        <footer-component></footer-component>
     <script src="../js/constructor.js"></script>
     <script src="../js/product.js"></script>
 
