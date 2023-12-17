@@ -7,107 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms - HappyPhone</title>
     <link rel="stylesheet" href="../css/terms.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
 
 </head>
 
 <body>
-    <section class="main-container">
-        <!--HEADER-->
-        <header>
-            <div><a href="./index.html"><img class="logo-web" src="./img/logo.png" alt="logo_HappyPhone"></a></src>
-            </div>
-            <nav class="nav-links">
-                <ul>
-                    <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
-                    <li class="menu-section"><a href="register.html">Registro</a></li>
-                    <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                    <li><a href="carrito.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png"
-                                alt="shoppingcart"></a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <!--SECCION TERMINOS Y CONDICIONES-->
-        <main class="terms">
-
-            <article class="terms-text">
-                <h2>Términos y Condiciones_2023</h2>
-                <div class="container">
-                    <div class="column">
-                        <h4>1. Introducción</h4>
-                        <p>Bienvenido a HappyPhone, un eCommerce de venta de teléfonos móviles y accesorios. Al realizar
-                            una compra en nuestro sitio web, aceptas los siguientes términos y condiciones. Por favor,
-                            léelos detenidamente antes de efectuar tu compra.</p>
-                        <h4>2. Información de Contacto</h4>
-                        <p>HappyPhone S.L.
-                            Dirección: Calle Fernando Poo 25, 28045, Madrid.
-                            Correo: contacto@happyphone.es
-                            Teléfono: 918 000 123</p>
-                        <h4>3. Precios y pagos</h4>
-                        <p>Los precios de nuestros productos están en Euros (€) e incluyen todos los impuestos
-                            aplicables.
-                            Aceptamos pagos a través de PayPal, y Tarjeta de Crédito .
-                            Tu pago se procesará de manera segura a través de nuestra pasarela de pagos.</p>
-
-                    </div>
-                    <div class="column">
-                        <h4>4. Envíos</h4>
-                        <p>Realizamos envíos a toda la UE utilizando servicios de mensajería confiables.
-                            Los plazos de entrega varían según la ubicación y la disponibilidad del producto.
-                            Los costos de envío se detallan durante el proceso de compra.
-                            No somos responsables de retrasos causados por terceros.</p>
-                        <h4>5. Devoluciones y garantías</h4>
-                        <p>Aceptamos devoluciones dentro de los 10 días posteriores a la recepción del producto, siempre
-                            y cuando esté en su estado original.
-                            Los productos defectuosos se rigen por nuestra política de garantía. Contáctanos para
-                            obtener más detalles.</p>
-                        <h4>6. Privacidad</h4>
-                        <p>Respetamos tu privacidad. Consulta nuestra Política de Privacidad para obtener más
-                            información sobre cómo manejamos tus datos.</p>
-                    </div>
-                    <div class="column">
-                        <h4>7. Propiedad Intelectual</h4>
-                        <p>Todos los derechos de propiedad intelectual relacionados con los productos y el sitio web son
-                            propiedad de HappyPhone.</p>
-                        <h4>8. Ley aplicable</h4>
-                        <p>Estos términos y condiciones se rigen por las leyes de Madrid, España. Cualquier disputa se
-                            resolverá en el tribunal competente.</p>
-                        <h4>9. Cambios en los términos y condiciones </h4>
-                        <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento.
-                            Los cambios entrarán en vigencia a partir de su publicación en el sitio web.</p>
-                        <h4>10. Contacto</h4>
-                        <p>Si tienes alguna pregunta o inquietud con respecto a nuestros términos y condiciones, no
-                            dudes en contactarnos a través de los datos de contacto proporcionados anteriormente.</p>
-                    </div>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+    <header-component></header-component>
 
 
-            </article>
+    <!--SECCION TERMINOS Y CONDICIONES-->
+    <main class="terms">
+
+        <article class="terms-text">
+            <h2>Términos y Condiciones  2023</h2>
+            <div class="container">
+                <div class="column">
+                    <h4>1. Introducción</h4>
+                    <p>Bienvenido a HappyPhone, un eCommerce de venta de teléfonos móviles y accesorios. Al realizar
+                        una compra en nuestro sitio web, aceptas los siguientes términos y condiciones. Por favor,
+                        léelos detenidamente antes de efectuar tu compra.</p>
+                    <h4>2. Información de Contacto</h4>
+                    <p>HappyPhone S.L.
+                        Dirección: Calle Fernando Poo 25, 28045, Madrid.
+                        Correo: contacto@happyphone.es
+                        Teléfono: 918 000 123</p>
+                    <h4>3. Precios y pagos</h4>
+                    <p>Los precios de nuestros productos están en Euros (€) e incluyen todos los impuestos
+                        aplicables.
+                        Aceptamos pagos a través de PayPal, y Tarjeta de Crédito .
+                        Tu pago se procesará de manera segura a través de nuestra pasarela de pagos.</p>
+
+                </div>
+                <div class="column">
+                    <h4>4. Envíos</h4>
+                    <p>Realizamos envíos a toda la UE utilizando servicios de mensajería confiables.
+                        Los plazos de entrega varían según la ubicación y la disponibilidad del producto.
+                        Los costos de envío se detallan durante el proceso de compra.
+                        No somos responsables de retrasos causados por terceros.</p>
+                    <h4>5. Devoluciones y garantías</h4>
+                    <p>Aceptamos devoluciones dentro de los 10 días posteriores a la recepción del producto, siempre
+                        y cuando esté en su estado original.
+                        Los productos defectuosos se rigen por nuestra política de garantía. Contáctanos para
+                        obtener más detalles.</p>
+                    <h4>6. Privacidad</h4>
+                    <p>Respetamos tu privacidad. Consulta nuestra Política de Privacidad para obtener más
+                        información sobre cómo manejamos tus datos.</p>
+                </div>
+                <div class="column">
+                    <h4>7. Propiedad Intelectual</h4>
+                    <p>Todos los derechos de propiedad intelectual relacionados con los productos y el sitio web son
+                        propiedad de HappyPhone.</p>
+                    <h4>8. Ley aplicable</h4>
+                    <p>Estos términos y condiciones se rigen por las leyes de Madrid, España. Cualquier disputa se
+                        resolverá en el tribunal competente.</p>
+                    <h4>9. Cambios en los términos y condiciones </h4>
+                    <p>Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento.
+                        Los cambios entrarán en vigencia a partir de su publicación en el sitio web.</p>
+                    <h4>10. Contacto</h4>
+                    <p>Si tienes alguna pregunta o inquietud con respecto a nuestros términos y condiciones, no
+                        dudes en contactarnos a través de los datos de contacto proporcionados anteriormente.</p>
+                </div>
 
 
-            <!--FOOTER-->
-            <footer>
-                <section class="about-footer">
-                    <ul>
-                        <p><strong><a href="#">About HappyPhone</a></strong></p>
-                        <li><a href="#">Ayuda</a></li>
-                        <li><a href="#">Sobre nosotros</a></li>
-                    </ul>
-                </section>
+        </article>
 
-                <figure class="rrss-footer" id="redes-sociales-container">
-                </figure>
+        <footer-component></footer-component>
 
-                <section class="info-footer">
-                    <ul>
-                        <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                        <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                        <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                    </ul>
-                </section>
-
-            </footer>
-    </section>
-    <script src="./js/constructor.js"></script>
+        <script src="../js/constructor.js"></script>
 
 </body>
 

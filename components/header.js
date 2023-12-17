@@ -84,12 +84,10 @@ align-content: r;
 
 .cart-amount{
   position: absolute;
-  top: 4px;
+  top: 30px;
   right: 15px;
   font-size: 14px;
 }
-
-
 
 
 @media only screen and (max-width: 768px) {
@@ -99,8 +97,8 @@ align-content: r;
     width: 40%;
     text-align: right;
     position: absolute;
-    top: 60px;
-    right: 0;
+    top: 100px;
+    right: 0px;
     background-color: #dfdfe2;
   }
 
@@ -130,14 +128,28 @@ align-content: r;
   
   .cart-amount{
     position: relative;
-    top: -44px;
+    top: -45px;
     right: 15px;
     font-size: 14px;
   }
 }
 
-a img {
+.lupa {
   width: 30px;
+}
+
+#frameBuscar{
+  width: 170px;
+  height: 28px;
+  background-color: red;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  z-index: 1;
+  display:none;
+  overflow: hidden;
 }
 
 
@@ -145,28 +157,32 @@ a img {
   <header>
     <nav>
       <div class="logo">
-        <img src="../img/logo.png" alt="Logo">
+      <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
       </div>
       <div class="menu-icon">
       <img class="menu-icon"src="../img/menu.png" alt="Logo">
       </div>
       <ul>
         <li><a href="../html/login.html">Inicia Sesión</a></li>
-        <li><a href="../html/login.html">Contacto</a></li>
-        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" alt="lupa"></a></li>        
-       
+        <li><a href="../html/contact.html">Contacto</a></li>
+        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" class="lupa" alt="Buscar"></a></li>
+        <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
         <li>
-
         <div class="cart">
-        <li><a href="cart.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
         alt="shoppingcart">
         <div id="cart-amount" class="cart-amount">0</div></a>
         </li>
+    </div>
         </li>
+        </li>
+        
     </div>
     </ul>
+
     </nav>
   </header>
+
 `;
 
 class Header extends HTMLElement {
@@ -184,6 +200,7 @@ class Header extends HTMLElement {
 
     menuIcon.addEventListener("click", () => {
       navList.classList.toggle("show");
+      document.getElementById("frameBuscar").style.display="none";
     });
   }
 }

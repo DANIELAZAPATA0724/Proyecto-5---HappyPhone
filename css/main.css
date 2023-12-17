@@ -33,3 +33,23 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+#frameBuscar{
+  width: 170px;
+  height: 28px;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  z-index: 1;
+  display:none;
+  overflow: hidden;
+}
+@media screen and (max-device-width: 768px){
+  #frameBuscar{
+      top: 200px;
+      right: 60px;
+  }
+}

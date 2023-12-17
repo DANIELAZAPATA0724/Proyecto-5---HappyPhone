@@ -1,86 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto - Tienda</title>
     <link rel="stylesheet" href="../css/product.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+
 </head>
-
 <body>
-    <section class="main-container">
-        <header>
-            <div><a href="../index.html"><img class="logo-web" src="../img/logo.png" alt="logo_HappyPhone"></a></src>
+<div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+<header-component></header-component>
+<main>
+    <main class="product">
+        <figure class="figure1">
+            <img class="product-image" src="../img/happy1.svg" alt="Foto Movil Happy 1">
+        </figure>
+        <article class="main-product">
+            <div class="description">
+                <h2 class="product-name">Happy 1</h2>
+                <ul class="text-description">
+                    <li>200 MP</li>
+                    <li>256GB｜8GB</li>
+                    <li>Zoom óptico x5</li>
+                    <li>6,1" resolución de pantalla</li>
+                    <li>12MP de cámara frontal</li>
+                </ul>
+                <h3>299,99€</h3>
             </div>
-            <nav class="nav-links">
-                <ul>
-                    <li class="menu-section"><a href="../img/login.html">Inicio sesión</a></li>
-                    <li class="menu-section"><a href="../img/register.html">Registro</a></li>
-                    <li class="menu-section"><a href="../img/contact.html">Contacto</a></li>
-                    <div class="cart">
-                        <li><a href="carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-                        alt="shoppingcart">
-                        <div id="cart-amount" class="cart-amount">0</div></a>
-                        </li>
-                    </div>
-                </ul>
-            </nav>
-        </header>
 
-        <main class="product">
-            <figure class="figure1">
-                <img class="product-image" src="../img/happy1.png" alt="Foto Movil Happy 1">
-            </figure>
-            <article class="main-product">
-                <div class="description">
-                    <h2 class="product-name">Happy 1</h2>
-                    <ul class="text-description">
-                        <li>200 MP</li>
-                        <li>256GB｜8GB</li>
-                        <li>Zoom óptico x5</li>
-                        <li>6,1" resolución de pantalla</li>
-                        <li>12MP de cámara frontal</li>
-                    </ul>
-                    <h3>299,99€</h3>
-                </div>
+            <div class="cantidad">
+                <button class="btn btn-decrementar">-</button>
+                <input type="text" pattern="[0-9]{2}" class="cantidad-input" value="1" min="1">
+                <button class="btn btn-incrementar">+</button>
+            </div>
 
-                <div class="cantidad">
-                    <button class="btn btn-decrementar">-</button>
-                    <input type="text" pattern="[0-9]{2}" class="cantidad-input" value="1" min="1">
-                    <button class="btn btn-incrementar">+</button>
-                </div>
+            <button class="add-to-cart" data-product-name="Happy 1">Comprar</button>
+            <!-- <button class="clear-cart">Borrar</button> -->
+            <a href="../index.html" class="back-to-catalog">Volver al catálogo</a>
+        </article>
 
-                <button class="add-to-cart" data-product-name="Happy 1">Comprar</button>
-                <!-- <button class="clear-cart">Borrar</button> -->
-                <a href="../index.html" class="back-to-catalog">Volver al catálogo</a>
-            </article>
 
-            
-        </main>
+    </main>
+    <footer-component></footer-component>
 
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="#">About HappyPhone</a></strong></p>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </section>
 
-            <figure class="rrss-footer" id="redes-sociales-container"></figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-        </footer>
-    </section>
-    <script src="./js/constructor.js"></script>
+    <script src="../js/constructor.js"></script>
     <script src="../js/product.js"></script>
 
-</body>
+    </body>
 
 </html>
