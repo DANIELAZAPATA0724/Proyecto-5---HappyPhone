@@ -92,9 +92,9 @@ a:hover{
   <footer>
         <section class="about-footer">
             <ul>
-                <p><strong><a href="../html/aboutus.html">About HappyPhone</a></strong></p>
-                <li><a href="../html/technicalservice.html">Servicio Técnico</a></li>
-                <li><a href="../html/aboutus.html">Sobre nosotros</a></li>
+                <p><strong><a href="../html/aboutus.html" target="_self">About HappyPhone</a></strong></p>
+                <li><a href="../html/technicalservice.html" target="_self">Servicio Técnico</a></li>
+                <li><a href="../html/aboutus.html" target="_self">Sobre nosotros</a></li>
             </ul>
         </section>
 
@@ -108,9 +108,9 @@ a:hover{
 
         <section class="info-footer">
             <ul>
-                <p><strong><a href="../html/moreinformation.html" target="_blank">Más información</a></strong></p>
-                <li><a href="../html/terms.html" target="_blank">Términos y condiciones</a></li>
-                <li><a href="../html/workwithus.html" target="_blank">Trabaja con nosotros</a></li>
+                <p><strong><a href="../html/moreinformation.html" target="_self">Más información</a></strong></p>
+                <li><a href="../html/terms.html" target="_self">Términos y condiciones</a></li>
+                <li><a href="../html/workwithus.html" target="_self">Trabaja con nosotros</a></li>
             </ul>
         </section>
         <script src="../js/constructor.js"></script>

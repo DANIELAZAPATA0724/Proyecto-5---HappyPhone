@@ -169,15 +169,15 @@ li {
 .cart-items {
     list-style: none;
     padding: 0;
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .cart-items li {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     margin-bottom: 20px;
 }
