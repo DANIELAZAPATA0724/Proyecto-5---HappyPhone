@@ -4,7 +4,7 @@
 E-commerce created to sell mobile phones.
 
 
-Proyecto innovador de **Happy Mobiles**, enfocado en presentar una línea exclusiva de teléfonos móviles que redefinen la experiencia del usuario. Ofrecemos dispositivos con diseño vanguardista, tecnología avanzada y opciones de personalización, priorizando una experiencia única para nuestros usuarios.
+Proyecto innovador de **Happy Mobiles**, enfocado en presentar y distribuir una línea exclusiva de teléfonos móviles que redefinen la experiencia del usuario. Ofrecemos dispositivos con diseño vanguardista, tecnología avanzada y opciones de personalización, priorizando una experiencia única para nuestros usuarios.
 
 ![imágen de un HappyPhone](./img/happyinicio.svg)
 
@@ -21,8 +21,6 @@ No es necesaria ninguna instalación, es un aplicativo web al que se accede con 
 ## Uso
 Si bien no se necesita identificación para navegar por todo el sitio y ver los diferentes modelos de móviles ofertados y la información de la empresa, para realizar una compra si se necesita una cuenta autentificada.
 ## Créditos
-
-
 
 ## Desarrolladores:
    > <a href="https://www.linkedin.com/in/andrea-garc%C3%ADa-cede%C3%B1o-5467a15b/">- Andrea García Cedeño</a></br>
