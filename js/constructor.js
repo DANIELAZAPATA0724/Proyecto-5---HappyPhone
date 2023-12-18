@@ -107,7 +107,7 @@
         alert("Registrado con éxito. Comienza a disfrutar de una experiencia móvil.");
      } else {
          // Muestra un mensaje de error al usuario
-         alert("Por favor, ingresa un correo electrónico válido y una contraseña con al menos 8 caracteres, incluyendo mayúsculas, minúsculas y números.");
+         //alert("Por favor, ingresa un correo electrónico válido y una contraseña con al menos 8 caracteres, incluyendo mayúsculas, minúsculas y números.");
      }
  });  
 

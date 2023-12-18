@@ -85,7 +85,7 @@ figure.logo-rrss img {
 .contacto {
   display: flex;
   justify-content: center;
-  padding: 43px 97px 10px 97px;
+  padding: 43px -7px 10px 97px;
   /* margin-bottom: -13rem; */
   /* margin-top: -2rem; */
   height: auto;
@@ -93,6 +93,15 @@ figure.logo-rrss img {
   align-items: center;
   align-content: space-between;
   flex-direction: row;
+}
+@media screen and (max-device-width: 560px){
+  .contacto {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+  }
 }
 
 .formulario {
@@ -108,17 +117,7 @@ figure.logo-rrss img {
   height: 65hv;
 }
 
-/* Media query para pantallas más pequeñas */
-@media screen and (max-width: 800px) {
-  .formulario {
-    width: 100%;
-  }
 
-  .mapa {
-    display: none;
-    /* Oculta el mapa en dispositivos móviles */
-  }
-}
 
 h4 {
   color: #333;
@@ -154,11 +153,6 @@ h4 {
 
 .logo-whatsapp {
   width: 40px;
-}
-
-.mapa {
-  max-width: 25%;
-  /* Ancho máximo para ocupar el ancho completo en todos los dispositivos */
 }
 
 /* Estilos para los campos del formulario */
