@@ -301,3 +301,10 @@ li {
     display: grid;
     justify-content: flex-end;
 }
+.btnLogin{
+    width: 10px;
+    height: 10px;
+}
+.btnLogin:hover{
+    transform: scale(1.3);
+}

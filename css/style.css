@@ -143,7 +143,6 @@ ul{
     justify-content: space-between;
 }
 .main-offer figure{
-    background-color: red; /* ELIMINAR */
     text-align: center; /* CENTRADO DE LA IMAGEN */
     width: 100%;
 }
@@ -152,7 +151,6 @@ ul{
     display: grid;
     justify-items: center;
     padding-top: 2rem;
-    background-color: green; /* ELIMINAR */
 }
 
 h1{
@@ -199,12 +197,17 @@ h4{
             minmax(250px, 1fr));
 
     gap: 10px;
-    max-width: 1300px;
-    justify-content: center;
-
+    width: 90%;
     margin: 0 auto;
     margin-top: 50px;
-    background-color: blue; /* ELIMINAR */
+    text-align: center;
+}
+@media screen and (max-device-width: 560px){ 
+    .carousel-products{
+   
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 article.product{
@@ -255,8 +258,8 @@ article.product figure{
 }
 
 .image-product{
-   min-width: 40px;
-   max-width: 220px;
+   min-width: 8em;
+   max-width: 20px;
 
    object-fit: cover;
    transition: all .5s;
@@ -328,19 +331,4 @@ footer{
     display: grid;
     justify-content:flex-end;
     font-family: 'poppR';
-}
-
-
-#frameBuscar{
-    width: 170px;
-    height: 28px;
-    background-color: transparent;
-    margin: 0px;
-    padding: 0px;
-    position: fixed;
-    top: 80px;
-    right: 0px;
-    z-index: 1;
-    display:none;
-    overflow: hidden;
 }
