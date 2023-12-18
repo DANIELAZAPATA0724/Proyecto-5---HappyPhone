@@ -128,7 +128,7 @@ btnSignUp.addEventListener("click", e => {
       let valid = true;
 
       // Validar nombre completo
-      if (nombreInput.value.trim() === '' || !/^[a-zA-Z\s]+$/.test(nombreInput.value)) {
+      if (nombreInput.value.trim() === '' || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,30}$/.test(nombreInput.value)) {
           valid = false;
           alert('Por favor, ingresa un nombre válido.');
       }
