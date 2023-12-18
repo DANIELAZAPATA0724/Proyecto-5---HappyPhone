@@ -150,6 +150,7 @@ btnSignUp.addEventListener("click", e => {
       }
   });
 });
+
 //Validacion captcha
 const form = document.querySelector('form');
 
