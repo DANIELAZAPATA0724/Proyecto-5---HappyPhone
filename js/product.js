@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             localStorage.setItem('carrito', JSON.stringify(carrito));
-            alert('Producto agregado al carrito.');
+            //alert('Producto agregado al carrito.');
 
             window.location.href = 'carrito.html'; // Redirige a la página del carrito
         });
