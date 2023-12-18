@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     case 'Happy 9':
                         price = 999.99;
                         break;
-                    case 'Happy 6':
+                    case 'Happy 10':
                         price = 999.99;
                         break;
                     default:
