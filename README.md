@@ -30,10 +30,11 @@ Si bien no se necesita identificación para navegar por todo el sitio y ver los 
    > <a href="https://www.linkedin.com/in/mar-prieto-garcia/">- María del Mar Prieto Garcia</a>
 
    Agradecimiento especial al equipo de desarrollo de la fase 1:
-   > Fulano</br>
-   > Mengana</br>
-   > Padano</br>
-
+   > Carla Escobar</br>
+   > Daniela Zapata</br>
+   > David Cabrerizo</br>
+   > Andrea García</br>
+   > Alexis Carrión
 
 ## Tecnologías utilizadas
 
