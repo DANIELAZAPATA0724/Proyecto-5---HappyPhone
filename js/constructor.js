@@ -92,9 +92,13 @@
  }
  
  btnSignIn.addEventListener("click", e => {
-     formRegister.classList.add("hide");
-     formLogin.classList.remove("hide");
- });
+  formRegister.classList.add("hide");
+  formLogin.classList.remove("hide");
+});
+btnSignUp.addEventListener("click", e => {
+  formRegister.classList.add("hide");
+  formLogin.classList.remove("hide");
+});
  
  btnSignUp.addEventListener("click", e => {
      const email = document.getElementById('email').value;
@@ -161,13 +165,13 @@ form.addEventListener('submit' , (e) => {
     const fd = new FormData(e.target);
     const params = new URLSearchParams(fd);
 
-    fectch('http://httpbin.org/post', {
+    fetch('http://httpbin.org/post', {
         method: "POST",
         body: params,
 
     })
     .then(res => res.json())
-    then(data => console.log(data))
+    .then(data => console.log(data))
     .catch(err => console.error(err))
 
 })
