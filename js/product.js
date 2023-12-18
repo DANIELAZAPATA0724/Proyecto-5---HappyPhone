@@ -58,6 +58,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     case 'HappyZ Flip':
                         price = 1250.99;
                         break;
+                    case 'Happy 6':
+                        price = 1050.99;
+                        break;
+                    case 'Happy 7':
+                        price = 999.99;
+                        break;
+                    case 'Happy 8':
+                        price = 999.99;
+                        break;
+                    case 'Happy 9':
+                        price = 999.99;
+                        break;
+                    case 'Happy 6':
+                        price = 999.99;
+                        break;
                     default:
                         price = 0;
                 }
