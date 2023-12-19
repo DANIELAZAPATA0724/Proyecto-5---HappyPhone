@@ -18,10 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
             // Agregar imagen del producto
             const image = document.createElement('img');
             const numeroProducto = item.nombre.split(' ')[1]; // Obtener el número del nombre del producto
-            image.src = `../img/happy${numeroProducto}.png`;
+
+            
+            let imageUrl = `../img/happy${numeroProducto}.svg`;
+            
+            if (item.nombre === 'HappyZ Flip') {
+                imageUrl = `../img/happy.svg`;
+            }
+            
+            image.src = imageUrl;
             image.alt = `${item.nombre} image`;
             image.classList.add('product-image');
             li.appendChild(image);
+            
 
             // Agregar información del producto (nombre, cantidad, precio)
             const itemInfo = document.createElement('div');

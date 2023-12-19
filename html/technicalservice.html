@@ -1,38 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--HEAD-->
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Technical Service - HappyPhone</title>
+
     <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/technicalservice.css" rel="stylesheet" type="text/css" />
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
-    <link rel="stylesheet" href="../css/technicalservice.css">
 
 </head>
 
 <body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
     <header-component></header-component>
+    <main>
 
-    <main class="thanks">
-        <figure>
-            <img class="check" src="./img/check.png" alt="Imagen con icono check">
-        </figure>
 
-        <article class="thanks-text">
-            <h2>¡GRACIAS POR TU COMPRA! FELIZ NAVIDAD</h2>
-            <h3>Tu pedido ha sido recibido</h3>
-            <p>Para más información sobre su pedido <a href="contact.html">Contáctanos</a></p>
-        </article>
+        <section id="reparaciones">
+            <h3>Nuestros Servicios de Reparación</h3>
+            <p>Ofrecemos una amplia gama de servicios de reparación para tu dispositivo HappyPhone.</p>
+            <!-- Aquí puedes agregar más información sobre los servicios de reparación -->
+        </section>
+
+        <section id="contacto">
+            <h4>Contacto</h4>
+            <p>¿Necesitas ayuda? ¡Contáctanos!</p>
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button class="enviar" onclick="enviarMensaje()">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <h5>&copy; 2023 HappyPhone Servicio Técnico. Todos los derechos reservados.</h5>
+
+
     </main>
+
+
     <footer-component></footer-component>
-
-
-
+    <script src="../js/technicalservice.js" type="text/javascript" defer></script>
 
 
 </body>
-
-</html>
+<html>

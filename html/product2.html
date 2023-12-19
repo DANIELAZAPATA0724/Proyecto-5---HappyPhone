@@ -13,13 +13,14 @@
 </head>
 
 <body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
     <header-component></header-component>
 
 
         <!--FICHA PRODUCTO-->
         <main class="product">
             <figure class="figure1">
-                <img class="product-image" src="../img/happy2.png" alt="Foto Movil Happy 2">
+                <img class="product-image" src="../img/happy2.svg" alt="Foto Movil Happy 2">
             </figure>
             <article class="main-product">
 
@@ -38,7 +39,7 @@
 
                 <div class="cantidad">
                     <button class="btn btn-decrementar">-</button>
-                    <input type="text" pattern="[0-9]{2}" class="cantidad-input" value="1" min="1">
+                    <input type="number" class="cantidad-input" value="1" min="1">
                     <button class="btn btn-incrementar">+</button>
                 </div>
                 <button class="add-to-cart" data-product-name="Happy 2">Comprar</button>

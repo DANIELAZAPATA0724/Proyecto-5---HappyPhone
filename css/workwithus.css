@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "poppB";
+  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppR";
+  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppM";
+  src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: "poppM";
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  margin: 35px;
+}
+
+.container {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.title {
+  text-align: center;
+  color: #2f8f97;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 2px;
+  color: #2c3e50;
+}
+
+input,
+button {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.file-input-container {
+  position: relative;
+}
+
+.file-label {
+  background-color: #2f8f97;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #7f8180;
+}
+
+button {
+  background-color: #7f8180;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2f8f97;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

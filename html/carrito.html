@@ -10,12 +10,17 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css" />
     <script src="../components/header.js" type="text/javascript" defer></script>
     <script src="../components/footer.js" type="text/javascript" defer></script>
-    <script
-        src="https://www.paypal.com/sdk/js?client-id=AaES8QMv9WMSe1ygcQioZNoznVYbgSLms6XWGAGiAUuD0i3Y8TjgSgf-u0NmKXlcGFY0_wMYigMVEpjc"></script>
-
+    
 </head>
 
 <body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+    <div class="cart">
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+        alt="shoppingcart">
+        <div id="cart-amount" class="cart-amount">0</div></a>
+        </li>
+    </div>
     <header-component></header-component>
     <main>
         <aside class="cart">
@@ -30,7 +35,7 @@
                 <label><input type="radio" name="payment" value="paypal"> PayPal</label>
                 <br />
                 <br />
-                <button class="pay-now" id="paypal-button">Pagar ahora</button>
+                <button class="pay-now" id="paypal-button" onclick="window.open('./thanks.html', '_self')" >Pagar ahora</button>
                 <button class="clear-cart">Limpiar carrito</button>
                 <button class="continue-shopping">Seguir comprando</button>
 

@@ -11,8 +11,15 @@
     <script src="../components/footer.js" type="text/javascript" defer></script>
 
 </head>
-
+<body>
+<div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
 <header-component></header-component>
+<div class="cart">
+    <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+    alt="shoppingcart">
+    <div id="cart-amount" class="cart-amount">0</div></a>
+    </li>
+</div>
 <main>
     <main class="product">
         <figure class="figure1">
@@ -33,7 +40,7 @@
 
             <div class="cantidad">
                 <button class="btn btn-decrementar">-</button>
-                <input type="text" pattern="[0-9]{2}" class="cantidad-input" value="1" min="1">
+                <input type="number" class="cantidad-input" value="1" min="1">
                 <button class="btn btn-incrementar">+</button>
             </div>
 
