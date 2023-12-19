@@ -92,9 +92,13 @@
  }
  
  btnSignIn.addEventListener("click", e => {
-     formRegister.classList.add("hide");
-     formLogin.classList.remove("hide");
- });
+  formRegister.classList.add("hide");
+  formLogin.classList.remove("hide");
+});
+btnSignUp.addEventListener("click", e => {
+  formRegister.classList.add("hide");
+  formLogin.classList.remove("hide");
+});
  
  btnSignUp.addEventListener("click", e => {
      const email = document.getElementById('email').value;
@@ -124,7 +128,7 @@
       let valid = true;
 
       // Validar nombre completo
-      if (nombreInput.value.trim() === '' || !/^[a-zA-Z\s]+$/.test(nombreInput.value)) {
+      if (nombreInput.value.trim() === '' || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,30}$/.test(nombreInput.value)) {
           valid = false;
           alert('Por favor, ingresa un nombre válido.');
       }
@@ -146,6 +150,7 @@
       }
   });
 });
+
 //Validacion captcha
 const form = document.querySelector('form');
 
@@ -161,13 +166,13 @@ form.addEventListener('submit' , (e) => {
     const fd = new FormData(e.target);
     const params = new URLSearchParams(fd);
 
-    fectch('http://httpbin.org/post', {
+    fetch('http://httpbin.org/post', {
         method: "POST",
         body: params,
 
     })
     .then(res => res.json())
-    then(data => console.log(data))
+    .then(data => console.log(data))
     .catch(err => console.error(err))
 
 })

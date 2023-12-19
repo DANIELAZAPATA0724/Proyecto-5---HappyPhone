@@ -15,13 +15,16 @@
 /*carrito de compra cantidad*/
 .logo-shoppingcart {
     width: 40px;
+    position:absolute;
+    margin-top: 2rem;
+    margin-left: -59px;
   }
 
 .cart-amount{
-    position: absolute;
+    position: relative;
     background-color:red;
-    top: -12px;
-    right: -7px;
+    margin-top: 1rem;
+    margin-right: -7px;
     font-size: 16px;
     padding: 3px;
     border-radius: 3px;
