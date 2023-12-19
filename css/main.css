@@ -47,6 +47,21 @@ main {
   display:none;
   overflow: hidden;
 }
+.logo-shoppingcart {
+  width: 40px;
+align-items: flex-ends;
+}
+
+.cart-amount{
+  position: absolute;
+  background-color:red;
+  top: 12px;
+  right: 7px;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
 @media screen and (max-device-width: 768px){
   #frameBuscar{
       top: 200px;
