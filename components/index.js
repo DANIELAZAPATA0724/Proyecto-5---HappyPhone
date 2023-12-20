@@ -1,3 +1,4 @@
+
 //HEADER
 const headerTemplate = document.createElement("template");
 
@@ -167,15 +168,15 @@ align-content: rigth;
   <header>
     <nav>
       <div class="logo">
-      <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
+      <a href="./index.html"><img src="./img/logo.png" alt="Logo"></a>
       </div>
       <div class="menu-icon">
-      <img class="menu-icon"src="../img/menu.png" alt="Logo">
+      <img class="menu-icon"src="./img/menu.png" alt="Logo">
       </div>
       <ul>
-        <li><a href="../html/login.html">Inicia Sesión</a></li>
-        <li><a href="../html/contact.html">Contacto</a></li>
-        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" class="lupa" alt="Buscar"></a></li>
+        <li><a href="./html/login.html">Inicia Sesión</a></li>
+        <li><a href="./html/contact.html">Contacto</a></li>
+        <li class="menu-section"><a onclick="muestraBusqueda();"><img src="./img/busqueda.svg" class="lupa" alt="Buscar"></a></li>
         <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
         </div>
         </li>
@@ -206,7 +207,7 @@ class Header extends HTMLElement {
 
     menuIcon.addEventListener("click", () => {
       navList.classList.toggle("show");
-      document.getElementById("frameBuscar").style.display = "none";
+      document.getElementById("frameBuscar").style.display="none";
     });
   }
 }
@@ -240,6 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Llama a la función para crear los iconos dentro del elemento 'rrss-footer'
   crearIconosRedesSociales(redesSocialesContainer);
 });
+
 
 //FOOTER
 
@@ -335,30 +337,28 @@ a:hover{
   <footer>
         <section class="about-footer">
             <ul>
-                <p><strong><a href="../html/aboutus.html" target="_self">About HappyPhone</a></strong></p>
-                <li><a href="../html/technicalservice.html" target="_self">Servicio Técnico</a></li>
-                <li> &copy; 2023 HappyPhone Servicio Técnico. Todos los derechos reservados.
-                </li>
+                <p><strong><a href="./html/aboutus.html" target="_self">About HappyPhone</a></strong></p>
+                <li><a href="./html/technicalservice.html" target="_self">Servicio Técnico</a></li>
+                <li><a href="./html/aboutus.html" target="_self">Sobre nosotros</a></li>
             </ul>
         </section>
 
         <figure class="rrss-footer">
-                <a href="https://www.instagram.com/" target="_blank"><img class="logo-rrss" src="../img/instagram.svg" alt="logo_instagram"></a>
-                <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" target="_blank"><img class="logo-rrss" src="../img/tiktok.svg" alt="logo_tiktok"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img class="logo-rrss" src="../img/youtube.svg" alt="logo_youtube"></a>
-            
-
+                <a href="https://www.instagram.com/" target="_blank"><img class="logo-rrss" src="./img/instagram.svg" alt="logo_instagram"></a>
+                <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" target="_blank"><img class="logo-rrss" src="./img/tiktok.svg" alt="logo_tiktok"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="logo-rrss" src="./img/youtube.svg" alt="logo_youtube"></a>
+            </figure>
         
         </figure>
 
         <section class="info-footer">
             <ul>
-                <p><strong><a href="../html/moreinformation.html" target="_self">Nuestro Equipo</a></strong></p>
-                <li><a href="../html/terms.html" target="_self">Términos y condiciones</a></li>
-                <li><a href="../html/workwithus.html" target="_self">Trabaja con nosotros</a></li>
+                <p><strong><a href="./html/moreinformation.html" target="_self">Más información</a></strong></p>
+                <li><a href="./html/terms.html" target="_self">Términos y condiciones</a></li>
+                <li><a href="./html/workwithus.html" target="_self">Trabaja con nosotros</a></li>
             </ul>
         </section>
-        <script src="../js/constructor.js"></script>
+        <script src="./js/constructor.js"></script>
 
 
     </footer>
@@ -378,117 +378,4 @@ class Footer extends HTMLElement {
 
 customElements.define("footer-component", Footer);
 
-// Constructor del login/registro dinamico
-const btnSignIn = document.getElementById("Sign-IN"); // Cambié 'Sign-Up' a 'Sign-IN' si selecciono el botón de inicio de sesión.
-const btnSignUp = document.getElementById("Sign-Up");
-const formRegister = document.querySelector(".register");
-const formLogin = document.querySelector(".login");
 
-btnSignIn.addEventListener("click", (e) => {
-  formRegister.classList.add("hide");
-  formLogin.classList.remove("hide");
-});
-
-btnSignUp.addEventListener("click", (e) => {
-  formLogin.classList.add("hide");
-  formRegister.classList.remove("hide");
-});
-
-//Validaciones del login/registro
-
-// Expresiones regulares para validación
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-
-// Función para validar campos
-function validateFields(email, password) {
-  return emailRegex.test(email) && passwordRegex.test(password);
-}
-
-btnSignIn.addEventListener("click", (e) => {
-  formRegister.classList.add("hide");
-  formLogin.classList.remove("hide");
-});
-btnSignUp.addEventListener("click", (e) => {
-  formRegister.classList.add("hide");
-  formLogin.classList.remove("hide");
-});
-
-btnSignUp.addEventListener("click", (e) => {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  if (validateFields(email, password)) {
-    formLogin.classList.add("hide");
-    formRegister.classList.remove("hide");
-    //// Muestro un mensaje de registro exitoso
-    alert(
-      "Registrado con éxito. Comienza a disfrutar de una experiencia móvil."
-    );
-  } else {
-    // Muestra un mensaje de error al usuario
-    //alert("Por favor, ingresa un correo electrónico válido y una contraseña con al menos 8 caracteres, incluyendo mayúsculas, minúsculas y números.");
-  }
-});
-//Validaciones contacto
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contactForm");
-  const nombreInput = document.getElementById("Nombres");
-  const telefonoInput = document.getElementById("teléfono");
-  const correoInput = document.getElementById("correo");
-  const submitButton = document.querySelector(".botons");
-  form.addEventListener("submit", function (event) {
-    let valid = true;
-    // Validar nombre completo
-    if (
-      nombreInput.value.trim() === "" ||
-      !/^[a-zA-Z\s]+$/.test(nombreInput.value)
-    ) {
-      valid = false;
-      alert("Por favor, ingresa un nombre válido.");
-    }
-    // Validar correo electrónico
-    if (
-      correoInput.value.trim() === "" ||
-      !/\S+@\S+\.\S+/.test(correoInput.value)
-    ) {
-      valid = false;
-      alert("Por favor, ingresa un correo electrónico válido.");
-    }
-    // Validar teléfono (al menos 9 dígitos)
-    if (
-      telefonoInput.value.trim() === "" ||
-      !/^\d{9,}$/.test(telefonoInput.value)
-    ) {
-      valid = false;
-      alert(
-        "Por favor, ingresa un número de teléfono válido (mínimo 9 cifras)."
-      );
-    }
-    if (!valid) {
-      event.preventDefault(); // Evitar que se envíe el formulario si hay errores
-    }
-  });
-});
-//Validacion captcha
-const form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const captchaResponse = grecaptcha.getResponse();
-  if (!captchaResponse.length > 0) {
-    throw new Error("Captcha not complete");
-  }
-  const fd = new FormData(e.target);
-  const params = new URLSearchParams(fd);
-
-  fetch("http://httpbin.org/post", {
-    method: "POST",
-    body: params,
-  })
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-    .then((data) => console.log(data))
-    .catch((err) => console.error(err));
-  alert("Registrado");
-  window.location.replace("../index.html");
-});
