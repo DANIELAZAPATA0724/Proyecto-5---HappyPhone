@@ -337,7 +337,7 @@ a:hover{
             <ul>
                 <p><strong><a href="../html/aboutus.html" target="_self">About HappyPhone</a></strong></p>
                 <li><a href="../html/technicalservice.html" target="_self">Servicio Técnico</a></li>
-                <li> &copy; 2023 HappyPhone Servicio Técnico. Todos los derechos reservados.
+                <li> &copy; 2023 HappyPhone. Todos los derechos reservados.
                 </li>
             </ul>
         </section>
