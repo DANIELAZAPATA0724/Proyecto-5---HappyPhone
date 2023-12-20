@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--HEAD-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - HappyPhone</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="./css/cart.css">
 
     <link href="./css/main.css" rel="stylesheet" type="text/css" />
-    <script src="./components/header.js" type="text/javascript" defer></script>
-    <script src="./components/footer.js" type="text/javascript" defer></script>
-   <script src="./js/product.js"></script>
+   
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 
 <body>
     <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
     <div class="cart">
-        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-        alt="shoppingcart">
-        <div id="cart-amount" class="cart-amount">0</div></a>
+        <li><a href="./html/carrito.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png"
+                    alt="shoppingcart">
+                <div id="cart-amount" class="cart-amount">0</div>
+            </a>
         </li>
-    </div> 
+    </div>
     <!--HEADER-->
-        <header-component></header-component>
-        <!--OFERTA PRINCIPAL-->
-        <main class="main-offer">
-            <figure>
-                <a href="./html/product.html"><img class="main-image" src="./img/happyinicio.svg" alt="Foto con oferta de movil de lanzamiento"></a>
-            </figure>
-            
-            <article class="main-text">
-                <h1>Consigue tu HappyZ Flip con HappyPhone</h1>
-                <h4>Aprovecha nuestra oferta de lanzamiento</h4>
-                <a href="./html/product.html"><button class="main-button">¡Descúbrelo!</button></a>
-            </article>
-        </main>
-        
-       <!--CAROUSEL PRODUCTOS-->
-       <section class="carousel-products" id="carousel-products">
-       </section>
+    <header-component></header-component>
+    <!--OFERTA PRINCIPAL-->
+    <main class="main-offer">
+        <figure>
+            <a href="./html/product.html"><img class="main-image" src="./img/happyinicio.svg"
+                    alt="Foto con oferta de movil de lanzamiento"></a>
+        </figure>
+
+        <article class="main-text">
+            <h1>Consigue tu HappyZ Flip con HappyPhone</h1>
+            <h4>Aprovecha nuestra oferta de lanzamiento</h4>
+            <a href="./html/product.html"><button class="main-button">¡Descúbrelo!</button></a>
+        </article>
+    </main>
+
+    <!--CAROUSEL PRODUCTOS-->
+    <section class="carousel-products" id="carousel-products">
+    </section>
 
     <!--FOOTER-->
-    
+
     <footer-component></footer-component>
-        <script src="./js/constructor.js"></script>
+    <script src="./components/index.js" type="text/javascript" defer></script>
+    <script src="./js/constructor.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 
 </html>
