@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const p = document.createElement('p');
         p.textContent = movil.nombre;
         const a = document.createElement('a');
-        a.href = `../html/${movil.clave}.html`;
+        a.href = `./html/${movil.clave}.html`;
         const button = document.createElement('button');
         button.textContent = 'Ver';
 
