@@ -3,7 +3,7 @@
       {
         "nombre": "HappyZ Flip",
         "clave": "product",
-        "ruta_imagen": "../img/happy.svg",
+        "ruta_imagen": "./img/happy.svg",
         "precio": 599,
         "descripcion": "Increíble smartphone",
         "color": "negro"
@@ -11,7 +11,7 @@
       {
         "nombre": "Happy 1",
         "clave": "product1",
-        "ruta_imagen": "../img/happy1.svg",
+        "ruta_imagen": "./img/happy1.svg",
         "precio": 599,
         "descripcion": "Increíble smartphone",
         "color": "negro"
@@ -19,7 +19,7 @@
       {
         "nombre": "Happy 2",
         "clave": "product2",
-        "ruta_imagen": "../img/happy2.svg",
+        "ruta_imagen": "./img/happy2.svg",
         "precio": 699,
         "descripcion": "Potente y elegante",
         "color": "plateado"
@@ -27,7 +27,7 @@
       {
         "nombre": "Happy 3",
         "clave": "product3",
-        "ruta_imagen": "../img/happy3.svg",
+        "ruta_imagen": "./img/happy3.svg",
         "precio": 499,
         "descripcion": "Compacto y moderno",
         "color": "azul"
@@ -35,7 +35,7 @@
       {
         "nombre": "Happy 4",
         "clave": "product4",
-        "ruta_imagen": "../img/happy4.svg",
+        "ruta_imagen": "./img/happy4.svg",
         "precio": 399,
         "descripcion": "Asequible y potente",
         "color": "azul"
@@ -43,7 +43,7 @@
       {
         "nombre": "Happy 5",
         "clave": "product5",
-        "ruta_imagen": "../img/happy5.svg",
+        "ruta_imagen": "./img/happy5.svg",
         "precio": 899,
         "descripcion": "El mejor móvil del mercado de 2023 según Mobile Today",
         "color": "azul"
@@ -51,7 +51,7 @@
       {
         "nombre": "Happy 6",
         "clave": "product6",
-        "ruta_imagen": "../img/happy6.svg",
+        "ruta_imagen": "./img/happy6.svg",
         "precio": 1050.99,
         "descripcion": "El mejor móvil del mercado de 2023 según Mobile Today",
         "color": "azul"
@@ -59,7 +59,7 @@
       {
         "nombre": "Happy 7",
         "clave": "product7",
-        "ruta_imagen": "../img/happy7.svg",
+        "ruta_imagen": "./img/happy7.svg",
         "precio": 999.99,
         "descripcion": "El mejor móvil del mercado de 2023 según Mobile Today",
         "color": "azul"
@@ -67,7 +67,7 @@
       {
         "nombre": "Happy 8",
         "clave": "product8",
-        "ruta_imagen": "../img/happy8.svg",
+        "ruta_imagen": "./img/happy8.svg",
         "precio": 999.99,
         "descripcion": "El mejor móvil del mercado de 2023 según Mobile Today",
         "color": "azul"
@@ -75,7 +75,7 @@
       {
         "nombre": "Happy 9",
         "clave": "product9",
-        "ruta_imagen": "../img/happy9.svg",
+        "ruta_imagen": "./img/happy9.svg",
         "precio": 999.99,
         "descripcion": "El mejor móvil del mercado de 2023 según Mobile Today",
         "color": "azul"
@@ -83,7 +83,7 @@
       {
         "nombre": "Happy 10",
         "clave": "product10",
-        "ruta_imagen": "../img/happy10.svg",
+        "ruta_imagen": "./img/happy10.svg",
         "precio": 999.99,
         "descripcion": "El mejor móvil del mercado de 2023 según Mobile Today",
         "color": "azul"

@@ -18,10 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
         divInfo.className = "info-product";
         const p = document.createElement("p");
         p.textContent = movil.nombre;
-        const a = document.createElement("a");
-        a.href = `../html/${movil.clave}.html`;
-        const button = document.createElement("button");
-        button.textContent = "Ver";
+
+        const a = document.createElement('a');
+        a.href = `./html/${movil.clave}.html`;
+        const button = document.createElement('button');
+        button.textContent = 'Ver';
 
         a.appendChild(button);
         divInfo.appendChild(p);
