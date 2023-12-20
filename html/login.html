@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +11,17 @@
   <link href="../css/main.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
   <script src="../components/header.js" type="text/javascript" defer></script>
-  <script src="../components/footer.js" type="text/javascript" defer></script>
   <script src="./js/product.js"></script>
 </head>
+
 <body>
   <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
   <div class="cart">
-    <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-    alt="shoppingcart">
-    <div id="cart-amount" class="cart-amount">0</div></a>
+    <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png" alt="shoppingcart">
+        <div id="cart-amount" class="cart-amount">0</div>
+      </a>
     </li>
-</div> 
+  </div>
   <header-component></header-component>
   <main>
     <section class="login-container">
@@ -42,14 +43,10 @@
               <img src="../img/google.svg" alt="Google" class="btnLogin">
               <img src="../img/linkedin.svg" alt="Linkedin" class="btnLogin">
               <img src="../img/github.svg" alt="Github" class="btnLogin">
-              <!--
-                <i class="bx bxl-google"></i>
-              <i class="bx bxl-github"></i>
-              <i class="bx bxl-linkedin"></i>
-              -->
+
             </div>
             <p>o usa tu mail para registrarte</p>
-            <form action="https://www.google.es/" class="form">
+            <form action="#" class="form">
               <label>
                 <i class="bx bx-user"></i>
                 <input type="text" placeholder="Nombre Completo" minlength="8" maxlength="20" required />
@@ -65,53 +62,52 @@
               <div class="bx bx">
                 <div class="g-recaptcha" data-sitekey="6LcDCi8pAAAAANBkdzahj_JcY_AIviKDkTWmQpJD"></div>
               </div>
-              <!--<input type="submit" onclick="window.open('../index.html');" value="Registrarse" />-->
-              <input type="submit" onclick="alert();" value="Registrarse" />
+              <input type="submit" value="Registrarse" />
             </form>
           </div>
         </div>
       </div>
-      <!– formulario de registro –>
-        <div class="container-form login hide">
-          <div class="information">
-            <div class="info-childs">
-              <h2>Comienza a Registrarte</h2>
-              <p>
-                Para unirte a nuestros servicios por favor<STRONG> Regístrate</STRONG> con tus
-                datos
-              </p>
-              <input type="button" value="Registrarse" id="Sign-Up" />
-            </div>
-          </div>
-          <div class="form-information">
-            <div class="form-information-childs">
-              <h2>Iniciar Sesión</h2>
-              <div class="icons">
-                <img src="../img/google.svg" alt="Google" class="btnLogin">
-                <img src="../img/linkedin.svg" alt="Linkedin" class="btnLogin">
-                <img src="../img/github.svg" alt="Github" class="btnLogin">
-              </div>
-              <p>o inicia sesión con una cuenta</p>
-              <form class="form" action="https://www.bing.es/">
-                <label>
-                  <i class="bx bx-envelope"></i>
-                  <input type="email" id="email" placeholder="Correo Electronico" required />
-                </label>
-                <label>
-                  <i class="bx bx-lock-alt"></i>
-                  <input type="password" id="password" placeholder="Password" minlength="8" />
-                </label>
-                <input type="submit" value="Iniciar Sesión" />
-              </form>
-            </div>
+      <!-- formulario de registro -->
+      <div class="container-form login hide">
+        <div class="information">
+          <div class="info-childs">
+            <h2>Comienza a Registrarte</h2>
+            <p>
+              Para unirte a nuestros servicios por favor<STRONG> Regístrate</STRONG> con tus
+              datos
+            </p>
+            <input type="button" value="Registrarse" id="Sign-Up" />
           </div>
         </div>
+        <div class="form-information">
+          <div class="form-information-childs">
+            <h2>Iniciar Sesión</h2>
+            <div class="icons">
+              <img src="../img/google.svg" alt="Google" class="btnLogin">
+              <img src="../img/linkedin.svg" alt="Linkedin" class="btnLogin">
+              <img src="../img/github.svg" alt="Github" class="btnLogin">
+            </div>
+            <p>o inicia sesión con una cuenta</p>
+            <form class="form" action="../index.html">
+              <label>
+                <i class="bx bx-envelope"></i>
+                <input type="email" id="email" placeholder="Correo Electronico" required />
+              </label>
+              <label>
+                <i class="bx bx-lock-alt"></i>
+                <input type="password" id="password" placeholder="Password" minlength="8" />
+              </label>
+              <input type="submit" value="Iniciar Sesión" />
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer-component></footer-component>
   </section>
-  <script src="../js/constructor.js"></script>
   <script src="../js/carrito.js"></script>
   <script src="../js/product.js"></script>
 </body>
+
 </html>
