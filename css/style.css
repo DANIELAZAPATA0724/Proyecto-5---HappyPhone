@@ -272,6 +272,37 @@ article.product figure{
 }
 
 
+/* Estilos por defecto para scroll horizontal */
+.product-wrapper {
+    display: flex; /* Flexbox para desplazamiento horizontal */
+    overflow-x: auto; /* Scroll horizontal cuando el contenido excede el ancho */
+    border: 1px solid #ccc;
+    padding-bottom: 8px; /* Para compensar el espacio del scrollbar */
+    width: 120vh;
+  }
+  
+  .product {
+    flex: 0 0 auto; /* Ajuste del tamaño de los productos en el flexbox */
+    margin-right: 12px; /* Espacio entre productos */
+  }
+  
+  /* Media query para pantalla menor de 560px */
+  @media screen and (max-width: 560px) {
+    .product-wrapper {
+      display: block; /* Cambia a desplazamiento vertical */
+      max-height: 300px; /* Altura máxima para mostrar el scroll vertical */
+      overflow-y: auto; /* Scroll vertical cuando el contenido excede la altura */
+      overflow-x: hidden; /* Oculta el scroll horizontal */
+    }
+  
+    .product {
+      margin-right: 0; /* Sin espaciado lateral en pantalla pequeña */
+      margin-bottom: 12px; /* Espaciado entre productos en scroll vertical */
+    }
+  }
+  
+  
+
 
 
 

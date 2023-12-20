@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const carouselContainer = document.getElementById("carousel-products");
+
+  const productWrapper = document.createElement("div");
+  productWrapper.className = "product-wrapper";
+
+  carouselContainer.appendChild(productWrapper);
+
   fetch("./json/catalogo.json")
     .then((response) => response.json())
     .then((data) => {
@@ -26,13 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         a.appendChild(figure);
         article.appendChild(a);
-        carouselContainer.appendChild(article);
+        productWrapper.appendChild(article);
       });
     })
     .catch((error) =>
       console.error("Error al obtener el archivo JSON:", error)
     );
 });
+
 
 
 
