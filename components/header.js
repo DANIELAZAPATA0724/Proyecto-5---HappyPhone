@@ -71,23 +71,28 @@ a:hover {
 }
 
 nav ul {
-align-content: r;
+align-content: rigth;
 }
+
+ 
+/*carrito de compra cantidad*/
 
 .logo-shoppingcart {
-  width: 30px;
-}
-
-.cart{
-  position: absolute;
-}
+    width: 40px;
+    position:absolute;
+    margin-top: 2rem;
+    margin-left: -59px;
+  }
 
 .cart-amount{
-  position: absolute;
-  top: 30px;
-  right: 15px;
-  font-size: 14px;
-}
+    position: relative;
+    background-color:red;
+    margin-top: 1rem;
+    margin-right: -7px;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 3px;
+  }
 
 
 @media only screen and (max-width: 768px) {
@@ -117,21 +122,26 @@ align-content: r;
     height: 30px;
     padding-inline-end: 10%;
   }
-  .logo-shoppingcart {
-    width: 30px;
-    margin-right: 26px;
+
+  /*carrito de compra cantidad*/
+
+.logo-shoppingcart {
+    width: 40px;
+    position:absolute;
+    margin-top: 2rem;
+    margin-left: -59px;
   }
-  
-  .cart{
-    position: absolute;
-  }
-  
-  .cart-amount{
+
+.cart-amount{
     position: relative;
-    top: -45px;
-    right: 15px;
-    font-size: 14px;
+    background-color:red;
+    margin-top: 1rem;
+    margin-right: -7px;
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 3px;
   }
+
 }
 
 .lupa {
@@ -167,20 +177,16 @@ align-content: r;
         <li><a href="../html/contact.html">Contacto</a></li>
         <li class="menu-section"><a onclick="muestraBusqueda();"><img src="../img/busqueda.svg" class="lupa" alt="Buscar"></a></li>
         <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
-        <li>
-        <div class="cart">
-        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
-        alt="shoppingcart">
-        <div id="cart-amount" class="cart-amount">0</div></a>
-        </li>
-    </div>
+        </div>
         </li>
         </li>
+  
         
     </div>
     </ul>
 
     </nav>
+  
   </header>
 
 `;

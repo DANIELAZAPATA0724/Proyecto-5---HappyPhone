@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - HappyPhone</title>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="../css/cart.css">
   <link rel="stylesheet" href="../css/login.css">
   <link href="../css/main.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
   <script src="../components/header.js" type="text/javascript" defer></script>
   <script src="../components/footer.js" type="text/javascript" defer></script>
-
+  <script src="./js/product.js"></script>
 </head>
-
 <body>
   <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
-
+  <div class="cart">
+    <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+    alt="shoppingcart">
+    <div id="cart-amount" class="cart-amount">0</div></a>
+    </li>
+</div> 
   <header-component></header-component>
   <main>
     <section class="login-container">
@@ -61,14 +65,13 @@
               <div class="bx bx">
                 <div class="g-recaptcha" data-sitekey="6LcDCi8pAAAAANBkdzahj_JcY_AIviKDkTWmQpJD"></div>
               </div>
-              <input type="submit" onclick="window.open('../index.html', '_self');" value="Registrarse" />
+              <!--<input type="submit" onclick="window.open('../index.html');" value="Registrarse" />-->
+              <input type="submit" onclick="alert();" value="Registrarse" />
             </form>
           </div>
         </div>
       </div>
-
       <!– formulario de registro –>
-
         <div class="container-form login hide">
           <div class="information">
             <div class="info-childs">
@@ -89,7 +92,7 @@
                 <img src="../img/github.svg" alt="Github" class="btnLogin">
               </div>
               <p>o inicia sesión con una cuenta</p>
-              <form class="form">
+              <form class="form" action="https://www.bing.es/">
                 <label>
                   <i class="bx bx-envelope"></i>
                   <input type="email" id="email" placeholder="Correo Electronico" required />
@@ -106,13 +109,9 @@
     </section>
   </main>
   <footer-component></footer-component>
-
   </section>
   <script src="../js/constructor.js"></script>
   <script src="../js/carrito.js"></script>
   <script src="../js/product.js"></script>
-
-
 </body>
-
 </html>
