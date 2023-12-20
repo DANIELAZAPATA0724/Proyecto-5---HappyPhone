@@ -77,7 +77,8 @@ let decrement = (id)=>{
     basket = basket.filter((x) => x.item !== 0);
     //console.log(basket);
     
-    localStorage.setItem("data",JSON.stringify(basket));
+    localStorage.setItem("data",JSON.stringify(basket)); //save data back in LS after manipulate the basket
+
 };
 
 let update = (id) => {
