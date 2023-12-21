@@ -110,6 +110,10 @@ align-content: rigth;
     padding-inline-end: 13%;
     padding-top: 8%;
   }
+  .clean{
+    text-decoration: none;
+    color: #ffffff00; 
+   }
 }
 
 .lupa {
