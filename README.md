@@ -43,8 +43,4 @@ Agradecimiento especial al equipo de desarrollo de la fase 1:
 
 Este proyecto está bajo la Licencia [CCO](LICENSE).
 
-<<<<<<< Updated upstream
 Las fuentes utilizadas en este proyecto estan sujetas a licencia SIL con Copyright &copy; 2014, Indian Type Foundry (info@indiantypefoundry.com)
-=======
-Las fuentes utilizadas en este proyecto estan sujetas a licencia SIL con Copyright &copy; 2014, Indian Type Foundry (info@indiantypefoundry.com)
->>>>>>> Stashed changes
