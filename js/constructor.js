@@ -75,7 +75,7 @@ function muestraBusqueda() {
               const listItem = document.createElement("li");
               const link = document.createElement("a");
               link.href = `./html/${movil.clave}.html`; // Redirigir a productx.html
-              link.innerHTML = `<img src='${movil.ruta_imagen}' alt='movil.nombre'>Nombre: ${movil.nombre} Precio: ${movil.precio} Color: ${movil.color} Descripción: ${movil.descripcion}`;
+              link.innerHTML = `<img src='${movil.ruta_imagen}' alt='movil.nombre'> Nombre: ${movil.nombre} <br>Precio: ${movil.precio} <br>Color: ${movil.color} <br>Descripción: ${movil.descripcion}`;
               listItem.appendChild(link);
               productList.appendChild(listItem);
               document.getElementById("frameBuscar").style.display = "none";

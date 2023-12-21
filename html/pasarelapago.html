@@ -18,12 +18,12 @@
     <main>
         <div class="payment-container">
             <h2>Detalle de Pago</h2>
-            <form id="payment-form">
+            <form id="payment-form" action="../html/thanks.html">
                 <label for="card-number">Número de Tarjeta:</label>
                 <input type="text" id="card-number" placeholder="   " maxlength="16" pattern="[0-9]{16}" required>
 
                 <label for="expiry-date">Fecha de Vencimiento:</label>
-                <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" pattern="(0[1-9]|1[0-2])\/\d{4}" required>
+                <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required> <!--pattern="(0[1-9]|1[0-2])\/\d{4}"-->
 
                 <label for="cvv">CVV:</label>
                 <input type="text" id="cvv" placeholder="***" maxlength="3" pattern="[0-9]{3}" required>
@@ -38,7 +38,7 @@
                     <i class="fab fa-cc-paypal"></i>
                 </div>
 
-                <button type="button" onclick="processPayment()">Pagar</button>
+                <button type="submit" onclick="processPayment()">Pagar</button>
             </form>
         </div>
     </main>
