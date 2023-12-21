@@ -59,7 +59,7 @@
 }
 
 .product-image {
-  /* width: 80px; Tamaño deseado para las imágenes comentado por que afectaba el estilo de la imagen de producto */
+   width: 110px; /*Tamaño deseado para las imágenes comentado por que afectaba el estilo de la imagen de producto  */
   height: auto;
   border-radius: 8px;
 }
