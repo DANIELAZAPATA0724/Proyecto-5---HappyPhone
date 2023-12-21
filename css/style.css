@@ -262,7 +262,7 @@ article.product figure{
     overflow-x: auto; /* Scroll horizontal cuando el contenido excede el ancho */
     border: 1px solid #ccc;
     padding-bottom: 8px; /* Para compensar el espacio del scrollbar */
-    width: 120vh;
+    width:100vw;
   }
   
   .product {
@@ -277,6 +277,7 @@ article.product figure{
       max-height: 300px; /* Altura máxima para mostrar el scroll vertical */
       overflow-y: auto; /* Scroll vertical cuando el contenido excede la altura */
       overflow-x: hidden; /* Oculta el scroll horizontal */
+      width: 100%;
     }
   
     .product {
