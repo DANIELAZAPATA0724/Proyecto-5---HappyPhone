@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "poppB";
+  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppR";
+  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppM";
+  src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: "poppM";
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#frameBuscar {
+  width: 170px;
+  height: 28px;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+}
+.logo-shoppingcart {
+  width: 40px;
+  align-items: flex-ends;
+}
+
+.cart-amount {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  top: 25px;
+  right: 12px;
+  font-size: 16px;
+  margin: 0px;
+  border-radius: 50%;
+  min-width: 22px;
+}
+
+@media screen and (max-device-width: 768px) {
+  #frameBuscar {
+    top: 200px;
+    right: 60px;
+  }
+}
+
+.clean {
+  text-decoration: none;
+  color: #ffffff00;
+}

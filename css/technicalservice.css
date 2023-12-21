@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "poppB";
+  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppR";
+  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppM";
+  src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Playpen Sans", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: fit-content;
+}
+
+/*HEADER*/
+
+header {
+  background-color: #d9d9d9;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: end;
+}
+
+header ul {
+  display: flex;
+  gap: 3rem;
+  margin-right: 1rem;
+
+  /* grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column; */
+  justify-content: end;
+  align-items: center;
+}
+
+.menu-section {
+  font-weight: bold;
+  font-size: large;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #2f8f97;
+}
+
+.menu-section:hover {
+  cursor: pointer;
+  color: #297780;
+}
+
+.logo-web {
+  width: 4rem;
+  display: grid;
+  justify-content: start;
+  margin-left: 1rem;
+}
+
+.logo-shoppingcart {
+  width: 40px;
+}
+
+figure.logo-rrss img {
+  width: 30px;
+  border: 1px solid black;
+}
+
+.main-container {
+  /* background-color: red; */
+  /* border: 3px solid black; */
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr 6fr 4fr 1fr;
+}
+
+/*CONTACTO*/
+.contacto {
+  display: flex;
+  justify-content: center;
+  padding: 43px -7px 10px 97px;
+  /* margin-bottom: -13rem; */
+  /* margin-top: -2rem; */
+  height: auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+}
+@media screen and (max-device-width: 560px) {
+  .contacto {
+    display: grid;
+    grid-template-rows: auto;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+  }
+}
+
+.formulario {
+  display: inline-block;
+  align-items: center;
+  color: #000;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  width: 425px;
+  height: 65hv;
+}
+
+h4 {
+  color: #333;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+  h4 {
+    font-size: 20px;
+    /* Ajusta el ancho al 100% en pantallas más pequeñas */
+  }
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logos-peques {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+}
+
+.logo-whatsapp {
+  width: 40px;
+}
+
+/* Estilos para los campos del formulario */
+.form-group {
+  margin: 5px;
+  text-align: center;
+}
+
+.control {
+  padding-left: 0px;
+  width: 23rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.control1 {
+  width: 23rem;
+  height: 6rem;
+  padding: 10px;
+  padding-bottom: 70px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  vertical-align: top;
+  text-align: center;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+  .control {
+    width: 100%;
+    /* Ajusta el ancho al 100% en pantallas más pequeñas */
+  }
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 800px) {
+  .control1 {
+    width: 80%;
+    /* Ajusta el ancho al 100% en pantallas más pequeñas */
+  }
+}
+
+/* Estilos para el botón de registro */
+.botons {
+  background-color: #2f8f97;
+  border: #2f8f97;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 13px;
+  box-shadow: 0 3px 6px 0px #000;
+  color: #ffff;
+}
+
+/* Estilos para el enlace de términos y condiciones */
+.form-group a {
+  text-decoration: none;
+  color: #2f8f97;
+}
+
+/* Estilos para el checkbox de términos y condiciones */
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Estilos en hover para el botón */
+.botons:hover {
+  cursor: pointer;
+  background-color: #297780;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}

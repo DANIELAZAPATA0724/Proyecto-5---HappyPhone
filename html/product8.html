@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HEAD-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 8 - HappyPhone</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="../css/cart.css" rel="stylesheet" type="text/css" />
+
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+    <div class="cart">
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                    alt="shoppingcart">
+                <div id="cart-amount" class="cart-amount">0</div>
+            </a>
+        </li>
+    </div>    
+    <header-component></header-component>
+  
+        <!--FICHA PRODUCTO-->
+        <main class="product">
+            <figure class="figure1">
+                <img class="product-image" src="../img/happy8.svg" alt="Foto Movil Happy 8">
+            </figure>
+            <article class="main-product">
+
+                <div class="description">
+                    <h2>Happy 8</h2>
+                    <ul class="text-description">
+                        <li>800 MP</li>
+                        <li>1T｜32GB</li>
+                        <li>Zoom óptico x54</li>
+                        <li>7,1" resolución de pantalla</li>
+                        <li>56MP de cámara frontal</li>
+                    </ul>
+
+                    <h3>999,99€</h3>
+                </div>
+
+                <div class="cantidad">
+                    <button class="btn btn-decrementar">-</button>
+                    <input type="number" class="cantidad-input" value="1" min="1">
+                    <button class="btn btn-incrementar">+</button>
+                </div>
+
+                <button class="add-to-cart" data-product-name="Happy 8">Comprar</button>
+                <!-- <button class="clear-cart">Borrar</button> -->
+                <a href="../index.html" class="back-to-catalog">Volver al catálogo</a>
+            </article>
+        </main>
+
+        <!--FOOTER-->
+        <footer-component></footer-component>
+    <script src="../js/constructor.js"></script>
+    <script src="../js/product.js"></script>
+
+</body>
+
+</html>

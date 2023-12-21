@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/contact.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/cart.css" type="text/css"/>
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+    <div class="cart">
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                    alt="shoppingcart">
+                <div id="cart-amount" class="cart-amount">0</div>
+            </a>
+        </li>
+    </div>
+    <header-component></header-component>
+
+    <main class="contacto">
+
+        <section class="formulario">
+            <h4>SERVICIO TECNICO<br>Incidencias</h4>
+
+            <h5></h5>
+            <form id="contactForm" action="../index.html" method="post">
+                <div class="form-group">
+                    <label for="Nombres">
+                        <div class="input-container">
+                            <img class="logos-peques" src="../img/user.png" alt="logo personita en verde">
+                            <input class="control" type="text" name="Nombres" id="Nombres" placeholder="Nombre completo"
+                                minlength="8" maxlength="20" required>
+                        </div>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="correo">
+                        <div class="input-container">
+                            <img class="logos-peques" src="../img/envelope.png" alt="logo sobre correo en verde">
+                            <input class="control" type="email" name="correo" id="correo" placeholder="E-mail" required>
+                        </div>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input class="control1" type="text" name="mensaje" id="mensaje" placeholder="Deja tu mensaje"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="terminos"><span>*</span>Acepto los <a href="terms.html">Términos y
+                            Condiciones</a></label>
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                </div>
+                <div class="form-group">
+                    <button class="botons" type="submit" onclick="enviarMensaje()">Enviar</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer-component></footer-component>
+
+    <script src="../js/technicalservice.js" type="text/javascript" defer></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>

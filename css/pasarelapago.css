@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "poppB";
+    src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "poppR";
+    src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "poppM";
+    src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+  }
+  
+  main{
+    font-family: "poppB";
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .payment-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #101111;
+  }
+  
+  h2 {
+    color: #2f8f97;
+    text-decoration: underline;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #2f8f97;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #565b56;
+  }
+  
+  .card-icons {
+    margin-top: 10px;
+  }
+  
+  .card-icons i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #555;
+  }

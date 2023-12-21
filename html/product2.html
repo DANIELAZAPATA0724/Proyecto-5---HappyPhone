@@ -6,35 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy 2 - HappyPhone</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;800&family=Poppins:wght@200;400;800&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="../css/product.css">
+    <link href="../css/cart.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <section class="main-container">
-        <!--HEADER-->
-        <header>
-            <div><a href="./index.html"><img class="logo-web" src="./img/logo.png"
-                        alt="logo_HappyPhone"></a></src>
-            </div>
-            <nav class="nav-links">
-                <ul>
-                    <li class="menu-section"><a href="login.html">Inicio sesión</a></li>
-                    <li class="menu-section"><a href="register.html">Registro</a></li>
-                    <li class="menu-section"><a href="contact.html">Contacto</a></li>
-                    <li><a href="cart.html"><img class="logo-shoppingcart" src="./img/shoppingcart.png" alt="shoppingcart"></a></li>
-                </ul>
-            </nav>
-        </header>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+    <div class="cart">
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                    alt="shoppingcart">
+                <div id="cart-amount" class="cart-amount">0</div>
+            </a>
+        </li>
+    </div>    
+    <header-component></header-component>
+
 
         <!--FICHA PRODUCTO-->
         <main class="product">
             <figure class="figure1">
-                <img class="product-image" src="./img/happy2.png" alt="Foto Movil Happy 2">
+                <img class="product-image" src="../img/happy2.svg" alt="Foto Movil Happy 2">
             </figure>
             <article class="main-product">
 
@@ -56,39 +50,16 @@
                     <input type="number" class="cantidad-input" value="1" min="1">
                     <button class="btn btn-incrementar">+</button>
                 </div>
-
-                <a href="./cart.html" target="_blank"> <button class="buy-button">Comprar</button></a>
-
+                <button class="add-to-cart" data-product-name="Happy 2">Comprar</button>
+                <!-- <button class="clear-cart">Borrar</button> -->
+                <a href="../index.html" class="back-to-catalog">Volver al catálogo</a>
             </article>
         </main>
 
-
-
-
-
-        <!--FOOTER-->
-        <footer>
-            <section class="about-footer">
-                <ul>
-                    <p><strong><a href="#">About HappyPhone</a></strong></p>
-                    <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </section>
-
-            <figure class="rrss-footer" id="redes-sociales-container">
-            </figure>
-
-            <section class="info-footer">
-                <ul>
-                    <p><strong><a href="#" target="_blank">Más información</a></strong></p>
-                    <li><a href="terms.html" target="_blank">Términos y condiciones</a></li>
-                    <li><a href="#" target="_blank">Trabaja con nosotros</a></li>
-                </ul>
-            </section>
-
-        </footer>
-    </section>
+        <script src="../js/product.js"></script>
+        <script src="../js/constructor.js"></script>
+    
+    <footer-component></footer-component>
 
 </body>
 

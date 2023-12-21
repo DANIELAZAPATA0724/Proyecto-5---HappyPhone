@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work with us - HappyPhone</title>
+    <link href="../css/workwithus.css" rel="stylesheet" type="text/css" />
+    <link href="../css/cart.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+    <div class="cart">
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+                    alt="shoppingcart">
+                <div id="cart-amount" class="cart-amount">0</div>
+            </a>
+        </li>
+    </div>
+    <header-component></header-component>
+    <main>
+        <h2>Trabaja con Nosotros</h2>
+        <p>Únete a nuestro equipo y sé parte de HappyPhone.</p>
+        <section>
+            <div class="container">
+                <h3 class="title">Ingresa tus datos</h3>
+                <form id="jobApplicationForm" enctype="multipart/form-data">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="resume">Adjuntar CV (PDF):</label>
+                    <div class="file-input-container">
+                        <label for="resume" class="file-label">Seleccionar archivo</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf" required>
+                    </div>
+
+                    <button type="button" onclick="submitForm()">Enviar solicitud</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+    <footer-component></footer-component>
+
+    <script src="../js/workwithus.js"></script>
+
+</body>
+<html>

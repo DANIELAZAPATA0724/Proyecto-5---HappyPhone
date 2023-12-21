@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - HappyPhone</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
+    <div class="cart">
+        <li><a href="../html/carrito.html"><img class="logo-shoppingcart" src="../img/shoppingcart.png"
+        alt="shoppingcart">
+        <div id="cart-amount" class="cart-amount">0</div></a>
+        </li>
+    </div>
+    <header-component></header-component>
+    <main>
+        <aside class="cart">
+            <h2>Carrito</h2>
+            <ul class="cart-items"></ul>
+            <div class="total">
+
+                <p>Total: <span class="total-amount">0</span>€</p>
+                <br />
+                <br />
+                <button class="pay-now" id="paypal-button" onclick="window.open('../html/pasarelapago.html', '_self')" >Pagar ahora</button>
+                <button class="clear-cart">Limpiar carrito</button>
+                <button class="continue-shopping">Seguir comprando</button>
+
+            </div>
+        </aside>
+    </main>
+    <footer-component></footer-component>
+
+
+    <script src="../js/carrito.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html>
