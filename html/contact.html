@@ -10,7 +10,6 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <script src="../components/header.js" type="text/javascript" defer></script>
-    <script src="../components/footer.js" type="text/javascript" defer></script>
 
 </head>
 
@@ -34,7 +33,7 @@
                 <label for="teléfono">
                     <div class="input-container">
                         <img class="logos-peques" src="../img/phone.png" alt="logo teléfono en verde">
-                        <input class="control" type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" minlength="8" maxlength="12" required>
+                        <input class="control" type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" minlength="8" maxlength="12" pattern="[0-9]{9,}" title="Ingresa solo números (mínimo 9 cifras)" required>
                     </div>
                 </label>
             </div>
@@ -76,8 +75,6 @@
     <footer-component></footer-component>
 
 
-
-    <script src="../contacto.js"></script>
     <script src="../js/constructor.js"></script>
     <script src="../js/carrito.js"></script>
     <script src="../js/product.js"></script>
