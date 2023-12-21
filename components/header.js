@@ -79,25 +79,7 @@ nav ul {
 align-content: rigth;
 }
 
- 
-/*carrito de compra cantidad*/
 
-.logo-shoppingcart {
-    width: 40px;
-    position:absolute;
-    margin-top: 2rem;
-    margin-left: -59px;
-  }
-
-.cart-amount{
-    position: relative;
-    background-color:red;
-    margin-top: 1rem;
-    margin-right: -7px;
-    font-size: 16px;
-    padding: 3px;
-    border-radius: 3px;
-  }
 
 
 @media only screen and (max-width: 768px) {
@@ -128,26 +110,6 @@ align-content: rigth;
     padding-inline-end: 13%;
     padding-top: 8%;
   }
-
-  /*carrito de compra cantidad*/
-
-.logo-shoppingcart {
-    width: 40px;
-    position:absolute;
-    margin-top: 2rem;
-    margin-left: -59px;
-  }
-
-.cart-amount{
-    position: relative;
-    background-color:red;
-    margin-top: 1rem;
-    margin-right: -7px;
-    font-size: 16px;
-    padding: 3px;
-    border-radius: 3px;
-  }
-
 }
 
 .lupa {

@@ -20,13 +20,16 @@
 } 
 
 .cart-amount{
-    position: relative;
-    background-color: #3498db;
-    margin-top: 12px;
-    margin-right: 10px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    top: 25px;
+    right: 12px;
     font-size: 16px;
-    padding: 3px;
-    border-radius: 3px;
+    margin: 0px;
+    border-radius: 50%;
+    min-width: 22px;
   }
 
 

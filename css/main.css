@@ -12,7 +12,6 @@
   src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +34,7 @@ main {
   flex: 1 0 auto;
 }
 
-#frameBuscar{
+#frameBuscar {
   width: 170px;
   height: 28px;
   background-color: transparent;
@@ -45,15 +44,15 @@ main {
   top: 80px;
   right: 0px;
   z-index: 1;
-  display:none;
+  display: none;
   overflow: hidden;
 }
 .logo-shoppingcart {
   width: 40px;
-align-items: flex-ends;
+  align-items: flex-ends;
 }
 
-.cart-amount{
+.cart-amount {
   position: absolute;
   color: white;
   font-weight: bold;
@@ -63,19 +62,17 @@ align-items: flex-ends;
   font-size: 16px;
   margin: 0px;
   border-radius: 50%;
+  min-width: 22px;
 }
 
-
-@media screen and (max-device-width: 768px){
-  #frameBuscar{
-      top: 200px;
-      right: 60px;
+@media screen and (max-device-width: 768px) {
+  #frameBuscar {
+    top: 200px;
+    right: 60px;
   }
 }
 
-
-
-.clean{
+.clean {
   text-decoration: none;
-  color: #ffffff00; 
- }
+  color: #ffffff00;
+}
