@@ -55,13 +55,16 @@ align-items: flex-ends;
 
 .cart-amount{
   position: absolute;
-  background-color:red;
-  top: 12px;
-  right: 7px;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  top: 25px;
+  right: 12px;
   font-size: 16px;
-  padding: 3px;
-  border-radius: 3px;
+  margin: 0px;
+  border-radius: 50%;
 }
+
 
 @media screen and (max-device-width: 768px){
   #frameBuscar{
@@ -69,3 +72,10 @@ align-items: flex-ends;
       right: 60px;
   }
 }
+
+
+
+.clean{
+  text-decoration: none;
+  color: #ffffff00; 
+ }
