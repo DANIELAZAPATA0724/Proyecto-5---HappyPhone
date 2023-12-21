@@ -17,7 +17,8 @@
     width: 40px;
     position:absolute;
     margin-top: 2rem;
-    margin-left: -59px;
+    margin-left: -259px; /* Movido de -59 a -259 para poder hacer click en la lupa 
+     VOLVER A CAMBIAR CUANDO SE ARREGLE EL POSICIONAMIENTO DEL MENÚ*/
   }
 
 .cart-amount{

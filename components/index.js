@@ -334,12 +334,13 @@ a:hover{
 
 </style>
 
-  <footer>
+<footer>
         <section class="about-footer">
             <ul>
                 <p><strong><a href="./html/aboutus.html" target="_self">About HappyPhone</a></strong></p>
                 <li><a href="./html/technicalservice.html" target="_self">Servicio Técnico</a></li>
-                <li><a href="./html/aboutus.html" target="_self">Sobre nosotros</a></li>
+                <li> &copy; 2023 HappyPhone. Todos los derechos reservados.
+                </li>
             </ul>
         </section>
 
@@ -347,13 +348,14 @@ a:hover{
                 <a href="https://www.instagram.com/" target="_blank"><img class="logo-rrss" src="./img/instagram.svg" alt="logo_instagram"></a>
                 <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" target="_blank"><img class="logo-rrss" src="./img/tiktok.svg" alt="logo_tiktok"></a>
                 <a href="https://www.youtube.com/" target="_blank"><img class="logo-rrss" src="./img/youtube.svg" alt="logo_youtube"></a>
-            </figure>
+            
+
         
         </figure>
 
         <section class="info-footer">
             <ul>
-                <p><strong><a href="./html/moreinformation.html" target="_self">Más información</a></strong></p>
+                <p><strong><a href="./html/moreinformation.html" target="_self">Nuestro Equipo</a></strong></p>
                 <li><a href="./html/terms.html" target="_self">Términos y condiciones</a></li>
                 <li><a href="./html/workwithus.html" target="_self">Trabaja con nosotros</a></li>
             </ul>
