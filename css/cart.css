@@ -14,18 +14,16 @@
 
 /*carrito de compra cantidad*/
 .logo-shoppingcart {
-    width: 40px;
-    position:absolute;
-    margin-top: 2rem;
-    margin-left: -259px; /* Movido de -59 a -259 para poder hacer click en la lupa 
-     VOLVER A CAMBIAR CUANDO SE ARREGLE EL POSICIONAMIENTO DEL MENÚ*/
-  }
+    position: absolute;
+    margin-top: 35px;
+    margin-left: -73px;
+} 
 
 .cart-amount{
     position: relative;
-    background-color:red;
-    margin-top: 1rem;
-    margin-right: -7px;
+    background-color: #3498db;
+    margin-top: 12px;
+    margin-right: 10px;
     font-size: 16px;
     padding: 3px;
     border-radius: 3px;

@@ -42,6 +42,11 @@ ul li {
   display: inline;
 }
 
+.clean{
+  text-decoration: none;
+  color: #ffffff00; 
+ }
+
 a {
   font-weight: bold;
   margin: 0 25px;
@@ -120,7 +125,8 @@ align-content: rigth;
     color: #000;
     width: 30px;
     height: 30px;
-    padding-inline-end: 10%;
+    padding-inline-end: 13%;
+    padding-top: 8%;
   }
 
   /*carrito de compra cantidad*/
@@ -180,6 +186,7 @@ align-content: rigth;
         </div>
         </li>
         </li>
+        <li><a href="#" class="clean" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
   
         
     </div>
@@ -206,6 +213,7 @@ class Header extends HTMLElement {
 
     menuIcon.addEventListener("click", () => {
       navList.classList.toggle("show");
+      document.getElementById("frameBuscar").style.display = "none";
       document.getElementById("frameBuscar").style.display = "none";
     });
   }
@@ -314,7 +322,7 @@ ul{
   justify-content:flex-end;
   font-family: 'poppR';
 }
-
+ 
 a{
   text-decoration: none;
   color: #000; 

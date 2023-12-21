@@ -55,9 +55,23 @@ a:hover {
     margin-left: 1rem;
 }
 
+/*CARRITO COMPRA*/
 .logo-shoppingcart {
-    width: 40px;
+  width: 40px;
 }
+.cart{
+  position: relative;
+}
+.cart-amount{
+  position: absolute;
+  background-color:#2f686e;
+  top: -12px;
+  right: -7px;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
  
 figure.logo-rrss img {
     width: 30px;
