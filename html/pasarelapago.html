@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main - HappyPhone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="../css/pasarelapago.css" rel="stylesheet" type="text/css" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <script src="../js/pasarelapago.js" type="text/javascript" defer></script>
+    <script src="../components/header.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    
+    <header-component></header-component>
+    <main>
+        <div class="payment-container">
+            <h2>Detalle de Pago</h2>
+            <form id="payment-form" action="../html/thanks.html">
+                <label for="card-number">Número de Tarjeta:</label>
+                <input type="text" id="card-number" placeholder="   " maxlength="16" pattern="[0-9]{16}" required>
+
+                <label for="expiry-date">Fecha de Vencimiento:</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required> <!--pattern="(0[1-9]|1[0-2])\/\d{4}"-->
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="***" maxlength="3" pattern="[0-9]{3}" required>
+
+                <label for="card-holder">Titular de la Tarjeta:</label>
+                <input type="text" id="card-holder" placeholder="Nombre Completo" required>
+
+                <div class="card-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-stripe"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+
+                <button type="submit" onclick="processPayment()">Pagar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer-component></footer-component>
+
+    <script src="../js/constructor.js"></script>
+    <script src="../js/product.js"></script>
+    <script> scr="../js/pasarelapago.js"</script>
+
+</body>
+<html>

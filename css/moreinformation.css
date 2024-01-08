@@ -53,3 +53,58 @@ main {
       right: 60px;
   }
 }
+main {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foto {
+  margin: 10px;
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+}
+
+img {
+  width:350px;
+  height: auto;
+  transition: transform 0.5s;
+}
+
+.descripcion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  transform: rotateY(90deg);
+  transform-origin: 0 0;
+  transition: transform 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  font-size: 14px;
+  z-index: 1;
+
+}
+
+.foto:hover .descripcion {
+  transform: rotateY(0deg);
+}
+
+@media screen and (min-width: 768px) {
+  .foto {
+      flex: 0 0 calc(33.333% - 20px);
+  }
+}

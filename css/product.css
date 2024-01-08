@@ -89,6 +89,9 @@ a {
   padding: 3px;
   border-radius: 3px;
 }
+.figure1 img{
+  width: 500px;
+}
 
 figure.logo-rrss img {
   width: 30px;

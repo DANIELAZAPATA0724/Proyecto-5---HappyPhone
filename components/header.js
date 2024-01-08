@@ -42,6 +42,11 @@ ul li {
   display: inline;
 }
 
+.clean{
+  text-decoration: none;
+  color: #ffffff00; 
+ }
+
 a {
   font-weight: bold;
   margin: 0 25px;
@@ -74,25 +79,7 @@ nav ul {
 align-content: rigth;
 }
 
- 
-/*carrito de compra cantidad*/
 
-.logo-shoppingcart {
-    width: 40px;
-    position:absolute;
-    margin-top: 2rem;
-    margin-left: -59px;
-  }
-
-.cart-amount{
-    position: relative;
-    background-color:red;
-    margin-top: 1rem;
-    margin-right: -7px;
-    font-size: 16px;
-    padding: 3px;
-    border-radius: 3px;
-  }
 
 
 @media only screen and (max-width: 768px) {
@@ -120,28 +107,13 @@ align-content: rigth;
     color: #000;
     width: 30px;
     height: 30px;
-    padding-inline-end: 10%;
+    padding-inline-end: 13%;
+    padding-top: 8%;
   }
-
-  /*carrito de compra cantidad*/
-
-.logo-shoppingcart {
-    width: 40px;
-    position:absolute;
-    margin-top: 2rem;
-    margin-left: -59px;
-  }
-
-.cart-amount{
-    position: relative;
-    background-color:red;
-    margin-top: 1rem;
-    margin-right: -7px;
-    font-size: 16px;
-    padding: 3px;
-    border-radius: 3px;
-  }
-
+  .clean{
+    text-decoration: none;
+    color: #ffffff00; 
+   }
 }
 
 .lupa {
@@ -180,6 +152,7 @@ align-content: rigth;
         </div>
         </li>
         </li>
+        <li><a href="#" class="clean" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
   
         
     </div>
@@ -314,7 +287,7 @@ ul{
   justify-content:flex-end;
   font-family: 'poppR';
 }
-
+ 
 a{
   text-decoration: none;
   color: #000; 

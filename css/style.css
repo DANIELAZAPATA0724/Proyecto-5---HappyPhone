@@ -80,23 +80,7 @@ a:hover{
     margin-left: 1rem;
 }
 
-/*CARRITO COMPRA*/
-.logo-shoppingcart {
-    width: 40px;
-  }
-  .cart{
-    position: relative;
-  }
-  .cart-amount{
-    position: absolute;
-    background-color:red;
-    top: -12px;
-    right: -7px;
-    font-size: 16px;
-    padding: 3px;
-    border-radius: 3px;
-  }
-  
+
 .main-container{
     
     height: 100vh;
@@ -197,7 +181,7 @@ h4{
             minmax(250px, 1fr));
 
     gap: 10px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
@@ -278,7 +262,8 @@ article.product figure{
     overflow-x: auto; /* Scroll horizontal cuando el contenido excede el ancho */
     border: 1px solid #ccc;
     padding-bottom: 8px; /* Para compensar el espacio del scrollbar */
-    width: 120vh;
+    width:80vw;
+    margin: center;
   }
   
   .product {
@@ -293,6 +278,7 @@ article.product figure{
       max-height: 300px; /* Altura máxima para mostrar el scroll vertical */
       overflow-y: auto; /* Scroll vertical cuando el contenido excede la altura */
       overflow-x: hidden; /* Oculta el scroll horizontal */
+      width: 100%;
     }
   
     .product {
@@ -362,4 +348,15 @@ footer{
     display: grid;
     justify-content:flex-end;
     font-family: 'poppR';
+}
+
+.productoBuscado{
+    display: block;
+    margin: 30px;
+    padding: 30px;
+    left: 0;
+    
+}
+.productoBuscado img{
+    width: 120px;
 }

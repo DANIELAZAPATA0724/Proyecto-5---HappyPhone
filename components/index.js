@@ -42,6 +42,10 @@ ul li {
   list-style: none;
   display: inline;
 }
+.clean{
+  text-decoration: none;
+  color: #ffffff00; 
+ }
 
 a {
   font-weight: bold;
@@ -121,27 +125,14 @@ align-content: rigth;
     color: #000;
     width: 30px;
     height: 30px;
-    padding-inline-end: 10%;
+    padding-inline-end: 13%;
+    padding-top: 8%;
   }
 
-  /*carrito de compra cantidad*/
-
-.logo-shoppingcart {
-    width: 40px;
-    position:absolute;
-    margin-top: 2rem;
-    margin-left: -59px;
-  }
-
-.cart-amount{
-    position: relative;
-    background-color:red;
-    margin-top: 1rem;
-    margin-right: -7px;
-    font-size: 16px;
-    padding: 3px;
-    border-radius: 3px;
-  }
+  .clean{
+    text-decoration: none;
+    color: #ffffff00; 
+   }
 
 }
 
@@ -174,15 +165,16 @@ align-content: rigth;
       <img class="menu-icon"src="./img/menu.png" alt="Logo">
       </div>
       <ul>
+     
+      <li><a href="#" class="clean" >libre</a></li>
         <li><a href="./html/login.html">Inicia Sesión</a></li>
         <li><a href="./html/contact.html">Contacto</a></li>
         <li class="menu-section"><a onclick="muestraBusqueda();"><img src="./img/busqueda.svg" class="lupa" alt="Buscar"></a></li>
         <div id="frameBuscar"><input type="text" minlength="3" maxlength="15" id="inpBusq" style="width: 150px;"></div>
         </div>
         </li>
-        </li>
-  
-        
+        <li><a href="#" class="clean" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
     </div>
     </ul>
 
